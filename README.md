@@ -5,7 +5,7 @@ English is the standard language that you should base your ID's off of.
 If something isn't found in your language file then it will fall back to English.
 
 ## How To Contribute
-You can contribute by translating by one of languages which GMod supports, you can see the table [https://wiki.facepunch.com/gmod/Addon_Localization#supportedlanguages](here).
+You can contribute by translating by one of languages which GMod supports, you can see the table [here](https://wiki.facepunch.com/gmod/Addon_Localization#supportedlanguages).
 
 1. Clone this repository in your local computer, either with `git clone` or preferably with GitHub [Desktop](https://desktop.github.com/download/) or [CLI](https://cli.github.com/)
 2. In the cloned repository, on your system. 
