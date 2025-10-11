@@ -1,0 +1,414 @@
+{
+    // General Game
+    /*
+        Valid languages (from gmod's menu): bg cs da de el en en-PT es-ES et fi fr ga-IE he hr hu it ja ko lt nl no pl pt-BR pt-PT ru sk sv-SE th tr uk vi zh-CN zh-TW
+    */
+    // WEAPONS/ITEMS/SKILLS/TRINKETS/TRAITS AND OTHER STUFF AREN'T YET SUPPORTED
+    // REASON IS CONSTANT UPDATES/BALANCE CHANGES TO THEM
+    // Ammo stuff
+
+    "ammo_regeneration": "Ammo Regeneration in: %s",
+    "no_ammo_here": "There's no ammo here right now.",
+
+    // Wave and game state
+    "arsenal_upgraded": "Arsenal Upgraded",
+    "auto_reloaded": "Your %s has been auto reloaded.",
+    "final_wave": "THE FINAL WAVE HAS BEGUN!",
+    "final_wave_sub": "ALL classes unlocked and the chance for redemption has ended!",
+    "wave_x_has_begun": "Wave %d has begun!",
+    "x_unlocked": "%d zombie classes unlocked!",
+    "wave_x_is_over": "Wave %d is over!",
+    "wave_x_is_over_sub": "The Undead have stopped rising.",
+    "points_for_surviving": "You've gained %d points for surviving.",
+    "scrap_for_surviving": "You've gained %d scrap for surviving.",
+
+    // UI / Notifications
+    "ok_and_no_reminder": "OK and don't pop this message up anymore",
+    "classic_mode_warning": "This server is running Zombie Survival in 'Classic Mode'\\nClassic Mode is a setting which greatly alters gameplay. Things that are changed:\\n* No selection of zombie classes. Everyone uses the Classic Zombie class\\n* No barricading tools such as nailing or turrets\\n* More but faster waves\\n\\nThis is NOT original Zombie Survival!\\n\\n// Servers which run classic mode will display CLASSIC MODE in the bottom left of the screen --",
+    "classic_mode": "CLASSIC MODE",
+    "resist_x": "Resist: %d%%",
+    "right_click_to_hammer_nail": "Right click to hammer in a nail.",
+    "nails_x": "Nails: %d",
+    "resupply_box": "Resupply Box",
+    "purchase_now": "Purchase now!",
+    "integrity_x": "Integrity: %d%%",
+    "empty": "EMPTY",
+    "manual_control": "MANUAL CONTROL",
+    "arsenal_crate": "Arsenal Crate",
+
+    // Nest messages
+    "not_enough_room_for_a_nest": "Not enough room here for a nest!",
+    "too_close_to_another_nest": "Too close to another nest!",
+    "nest_created": "Nest created! Finish building to enable spawning here.",
+    "nest_built_by_x": "A Flesh Creeper nest has been built by %s and is now a spawn point.",
+    "nest_destroyed": "A Flesh Creeper nest has been destroyed.",
+    "nest_destroyed_by_zombie": "A Flesh Creeper nest has been destroyed by %s.",
+    "wait_x_seconds_before_making_a_new_nest": "You must wait %d more seconds before creating a new nest.",
+    "too_close_to_a_human": "Too close to a human!",
+    "too_close_to_a_spawn": "Too close to a zombie spawn!",
+    "too_close_to_uncorrupt": "Too close to an uncorrupted sigil!",
+    "too_far_from_corrupt": "Too far from a corrupted sigil!",
+    "x_limit_per_corrupt": "%s limit for this corrupted sigil!",
+    "x_has_built_this_nest_and_is_still_around": "%s has built this nest and is still around, so you can't demolish it.",
+    "no_other_nests": "You can't destroy a nest if only one remains.",
+    "there_are_too_many_nests": "There are too many nests so you can't build any more!",
+    "you_have_made_too_many_nests": "You've already created enough nests. Demolish one and try again.",
+    "no_free_channel": "Radio interference from too many already being placed!",
+
+    // Shop/Items messages
+    "tier_x_items_unlock_at_wave_y": "Tier %d items unlock at wave %d",
+    "tier_x_items": "Tier %d items",
+    "humans_furthest_from_sigils_are_zombies": "The humans furthest from a Sanity Sigil will start as zombies.",
+    "out_of_stock": "That item is out of stock!",
+    "out_of_stock_personal": "That item is out of personal stock!",
+    "acquired_x_y": "Acquired %d %s",
+    "obtained_x_y_ammo": "Obtained %d %s ammo",
+    "obtained_x_y_reagent": "+%d %s",
+    "gave_x_y_ammo_to_z": "Gave %d %s ammo to %s",
+    "obtained_x_y_ammo_from_z": "Obtained %d %s ammo from %s",
+
+    // Healing/Buff messages
+    "healed_x_by_y": "%s healed you for %d HP",
+    "temphealed_x_by_y": "%s healed you for %d temporary HP",
+    "healed_x_by_y_armor": "%s healed you for %d blood armor",
+    "healed_x_for_y": "Healed %s for %d HP",
+    "temphealed_x_for_y": "Healed %s for %d temporary HP",
+    "buffed_x_with_y_for_z": "%s buffed you with %s for %d seconds",
+    "buffed_x_with_a_y_for_z": "Buffed %s with %s for %d seconds",
+    "removed_your_nail": "%s removed one of your nails",
+    "giving_items_to": "Giving items to %s",
+
+    // Remantling/Crafting messages
+    "weapon_remantler": "Remantler",
+    "remantle_success": "Weapon Remantled:",
+    "remantle_success_tr": "Trinket Remantled:",
+    "remantle_used": "%d scrap has been created in your remantler.",
+    "alchemy_used": "%d alchemical ore has been created in your alchemy table.",
+    "remantle_cannot": "You already have an upgraded weapon of this type.",
+    "remantle_cannot_switch": "You can't switch this weapon to another remantle variant.",
+    "remantle_branch_disabled": "Switching to this weapon variant is disabled.",
+
+    // Inventory/trinket messages
+    "obtained_a_inv": "%s added to inventory",
+    "you_already_have_this_trinket": "You already have this trinket in your inventory.",
+    "you_already_have_this_trait": "You already have this trait enabled.",
+    "swapped_trinket": "You've swapped your trinket with an upgraded one.",
+    "they_already_have_this_trinket": "They already have this trinket in their inventory.",
+    "they_already_have_too_many": "They already have too many of these trinkets.",
+    "you_cannot_carry_more_comps": "You cannot carry more crafting components.",
+    "they_cannot_carry_more_comps": "They cannot carry more crafting components.",
+    "you_require_an_alchemists_wand": "You require an Alchemist's Wand to pick this up.",
+    "obtained_inv_item_from_z": "Obtained %s from %s added to inventory",
+
+    // Deployable/Item messages
+    "deployable_lost": "Your %s was lost.",
+    "deployable_claimed": "You've claimed a %s.",
+    "trinket_consumed": "Your %s has been consumed and activated.",
+    "trinket_used": "Your %s has been activated.",
+    "skill_used": "Your %s skill has triggered.",
+    "ran_out_of_ammo": "Your %s has run out of ammo.",
+    "trinket_recharged": "Your %s has recharged and is ready to use again.",
+
+    // Evolution/Progression messages
+    "evolves_in_to_x_on_wave_y": "Evolves in to %s on wave %d.",
+    "evolves_in_to_x_in_special": "Evolves in to %s in special circumstances.",
+    "you_have_been_awarded_xp_for_cades": "You have been awarded %d XP for constructing barricades.",
+    "you_have_been_awarded_points_for_cades": "You have been awarded %d points for constructing barricades.",
+    "need_to_be_near_transponder": "You need to be near a Barricade Transponder!",
+    "cant_buy_props": "You can't buy that prop!",
+    "weapon_tier_x_unlocked": "Weapon tier %d unlocked.",
+    "past_wave_buy_limit": "This item is no longer purchasable.",
+    "receieved_x_dark_essence_for_killing_y": "Received %d Dark Essence for killing %s.",
+    "gunk_jump_message": "Press JUMP to escape!!!",
+
+    // Objective stuff
+    "class_not_unlocked_yet_unlocked_in_x": "That class is not unlocked yet. It will be unlocked in %s.",
+    "class_is_locked_obj": "This class is locked in objective maps!",
+    "zombie_in_x": "Wave %s zombies will be unlocked in %s",
+    "you_will_be_x_in_y": "You will become %s in %s!",
+    "x_will_be_y_in_z": "%s will become %s in %s!",
+
+    // Skill system messages
+    "unspent_skill_points_press_x": "You have unspent skill points. Press %q to unlock new skills.",
+    "x_requires_a_skill_you_dont_have": "%s requires a skill you don't have!",
+    "you_ascended_to_level_x": "You have ascended to level %d!",
+    "you_have_remorted_now_rl_x": "You have remorted and ascended to remort level %d!",
+    "you_now_have_x_extra_sp": "You now have %d extra skill points!",
+    "x_has_remorted_to_rl_y": "%s has remorted to remort level %d!!",
+    "you_have_reset_all": "All of your skills, XP, and skill points have been reset.",
+
+    // Additional game messages
+    "capture_progress": "%s | %s/%s [%s%%]",
+    "infliction_rate": "Infliction Rate: %d%%",
+    "infliction_reached": "%d%% of humans have died!",
+    "infliction_reached_classic": "%d%% zombie infliction has been reached!",
+    "infliction_reached_class_unlocked": "%d%% zombie infliction has been reached! %s unlocked!",
+    "survive": "Survive the zombie onslaught!",
+    "survive_wave": "The Zombie Onslaught has started!",
+    "survive_wave_sub": "Survive until the remaining time ends!",
+    "disconnect_killed": "%s was disconnect killed by %s.",
+    "nail_removed_by": "%s removed a nail belonging to %s.",
+    "deployable_placed_by": "%s [%s] deployed %s at position (%s).",
+
+    // Purchase restrictions and messages
+    "late_buyer_warning": "You have the Late Buyer skill active so you can't purchase anything until the second half!",
+    "round_half_over_arsenal_prices_updated": "The round is halfway over. Arsenal prices have changed.",
+    "need_to_be_near_arsenal_crate": "You need to be near an Arsenal Crate or Sigil to purchase items!",
+    "need_to_be_near_remantler": "You need to be near a Remantler!",
+    "need_to_be_near_remantler_or_sigil": "You need to be near a Remantler or Sigil!",
+    "need_to_be_near_alchemy_table": "You need to be near a Crafting Table!",
+    "need_to_be_near_sigil": "You need to be near a Sigil!",
+    "need_to_be_near_uncorrupted_sigil": "Cannot purchase with only corrupted sigils!",
+    "target_need_to_be_near_shop": "Recipient needs to be near a shop!",
+    "too_early_for_honed": "You can't upgrade weapons to Honed until after 90 seconds from the start of wave 1.",
+    "too_early_for_perfected": "You can't upgrade weapons to Perfected until after 3 minutes from the start of wave 1.",
+    "cant_party_buy_item": "You can't party-buy this specific item",
+    "cant_purchase_right_now": "You can't purchase this right now.",
+    "purchase_is_on_cooldown_for_x_seconds": "Purchase is on cooldown for %d seconds!",
+    "cant_purchase_this_type": "You can't purchase this type of item.",
+    "dont_have_enough_points": "You don't have enough points.",
+    "dont_have_enough_dark_essence": "You don't have enough Dark Essence.",
+    "dont_have_enough_bounty_tokens": "You don't have enough Bounty tokens.",
+    "dont_have_enough_artifact_tokens": "You don't have enough Artifact tokens.",
+    "dont_have_enough_seasonal_points": "You don't have enough seasonal points.",
+
+    // Upgrade restrictions
+    "upgrade_can_only_be_purchased_once_per_life": "Upgrade can only be purchased once per life.",
+    "upgrade_can_only_be_purchased_twice_per_life": "Upgrade can only be purchased twice per life.",
+    "upgrade_can_only_be_purchased_on_pointsave": "Upgrade can only be purchased on pointsave.",
+    "upgrade_can_only_be_purchased_on_main": "Upgrade can only be purchased on main.",
+    "upgrade_is_on_cooldown_for_x_seconds": "Upgrade is on cooldown for %d seconds!",
+    "upgrade_unlocks_wave_x": "Upgrade is locked until wave %d!",
+    "upgrade_currently_has_no_stocks": "Upgrade currently has no stocks!",
+    "upgrade_cannot_be_purchased_during_intermission": "Upgrade cannot be purchased during wave intermission!",
+    "upgrade_cannot_be_purchased_whilst_boss": "Upgrade cannot be purchased whilst boss!",
+    "upgrade_cannot_be_purchased_whilst_one_active_horde": "Horde buffs cannot purchased while one is active.",
+    "upgrade_cannot_be_purchased_whilst_one_active": "Offensive buffs cannot be purchased while one is active.",
+    "upgrade_cannot_be_purchased_team_limit_for_x": "Your team has too many %ss",
+    "upgrade_cannot_currently_be_purchased": "Upgrade cannot be currently be purchased!",
+    "upgrade_cannot_selected_weapon_x": "Cannot upgrade %s",
+
+    // Crafting and item restrictions
+    "need_to_have_enough_scrap": "You don't have enough scrap.",
+    "cannot_dismantle": "You cannot dismantle this item.",
+    "cannot_upgrade_trinket": "You cannot upgrade this trinket.",
+    "cannot_drop": "You cannot drop this item.",
+    "cannot_give": "You cannot give this item.",
+
+    // Purchase success messages
+    "purchased_x_for_y_points": "Purchased %s for %d points!",
+    "purchased_x_for_y_dark_essence": "Purchased %s for %d Dark Essence!",
+    "purchased_x_for_y_bounty_tokens": "Purchased %s for %d Bounty tokens!",
+    "purchased_x_for_y_bounty_token": "Purchased %s for %d Bounty token!",
+    "purchased_x_for_y_artifact_tokens": "Purchased %s for %d Artifact tokens!",
+    "purchased_x_for_y_artifact_token": "Purchased %s for %d Artifact token!",
+    "purchased_x_for_y_seasonal_points": "Purchased %s for %d seasonal points!",
+    "purchased_x_missing_scrap_for_y_points": "Purchased %s missing scrap for %d points.",
+    "received_x_from_y": "Received %s from %s! How generous!",
+    "purchased_for_x_denied": "%s does not accept gifts from you!",
+    "purchase_for_target_on_cooldown": "Your purchases for others is on cooldown for %d seconds!",
+    "created_x_for_y_scrap": "Created %s for %d scrap!",
+
+    // Misc game messages
+    "give_time_before_suicide": "Give others time to spawn before suiciding.",
+    "no_spare_ammo_to_give": "No spare ammo to give!",
+    "no_person_in_range": "No person in range!",
+    "no_food_here": "There's no food here right now.",
+
+    // Redemption and death messages
+    "you_redeemed": "You have redeemed!",
+    "x_redeemed": "%s has redeemed!",
+    "kill_the_last_human": "Kill the last human!",
+    "you_are_the_last_human": "YOU ARE THE LAST HUMAN!",
+    "x_zombies_out_to_get_you": "%d ZOMBIES ARE OUT TO GET YOU!",
+    "you_have_died": "You have died.",
+    "you_were_killed_by_x": "You were killed by %s",
+    "you_were_kicked_by_x": "You were kicked in the shins by %s",
+
+    // Point/objective messages
+    "point_lost": "The %s has been lost!",
+    "point_won": "The %s has been captured!",
+    "point_spawn": "The %s has arrived!",
+
+    // Class and zombie messages
+    "you_are_x": "You are %s!",
+    "x_has_risen_as_y": "%s has risen as %s!!",
+    "x_rose_as_y": "%s rose as %s!!",
+    "x_demis_risen": "%d demibosses have risen!",
+    "x_has_risen": "A boss zombie has risen!",
+    "x_has_been_slain_as_y": "%s has been slain as %s!",
+    "cant_use_worth_anymore": "You can't use the Worth menu any more!",
+    "class_not_unlocked_will_be_unlocked_x": "That class is not unlocked yet. It will be unlocked at the start of wave %d.",
+    "you_are_already_a_x": "You are already a %s.",
+    "you_will_spawn_as_a_x": "You will spawn as a %s.",
+    "you_are_now_a_x": "You are now a %s.",
+
+    // Crafting messages
+    "crafting_successful": "Crafting successful!",
+    "x_crafted_y": "%s crafted %s.",
+    "cooking_success": "Foods Combined:",
+    "flask_success": "Flask Combined:",
+
+    // Zombie Escape
+    "escape_from_the_zombies": "Escape from the zombies!",
+    "zombie_escape": "Zombie Escape!",
+
+    // Cading stuff
+    "too_close_to_another_nail": "Too close to another nail.",
+    "object_too_damaged_to_be_used": "That object is too damaged to be used anymore.",
+    "cant_remove_nails_of_superior_player": "You can't remove the nails of a player with the barricade expert skill because you don't also have the skill.",
+    "too_close_to_another_structure": "Too close to another structure!",
+    "not_enough_room_for_a_structure": "Not enough room for a stucture!",
+    "x_has_finished_building": "%s has finished building.",
+    "nothing_to_destroy": "Nothing to destroy.",
+    "too_far_from_infested_sigil": "Too far from an infested sigil!",
+    "x_limit_per_infested_sigil": "%s limit for this infested sigil!",
+
+    // Admin messages
+    "x_turned_on_noclip": "%s turned on noclip.",
+    "x_turned_off_noclip": "%s turned off noclip.",
+
+    // Discount and special messages
+    "x_discount_for_buying_between_waves": "%d%% discount for buying between waves!",
+    "number_of_initial_zombies_this_game": "Number of initial zombies this game (%d%%): %d",
+    "humans_closest_to_spawns_are_zombies": "The humans closest to the zombie spawns will start as zombies.",
+    "unlocked_on_wave_x": "Unlocked on wave %d",
+
+    // Waiting and loading messages
+    "waiting_for_players": "Waiting for players...",
+    "requires_x_people": "Requires %d people",
+    "packing_others_object": "Packing other person's %s",
+    "packing": "Packing %s",
+    "loading": "Loading...",
+    "next_round_in_x": "Next round in: %s",
+    "warning": "Warning!",
+    "ready": "Ready",
+
+    // Interaction messages
+    "impossible": "Impossible.",
+    "trying_to_put_nails_in_glass": "Trying to put nails in glass is a silly thing to do.",
+    "boss_class_select": "You will be %s the next time you're a boss zombie.",
+    "demi_class_select": "You will be a %s the next time you're a demiboss zombie.",
+    "person_has_weapon": "They already have that weapon.",
+    "person_not_on_friends": "You've set yourself to only give items to your friends.",
+
+    // Mode restrictions
+    "cant_do_that_in_classic_mode": "You can't do that in Classic Mode.",
+    "cant_use_x_in_classic_mode": "You can't use %s in Classic Mode.",
+    "cant_use_x_in_objective_mode": "You can't use %s on an objective map.",
+    "cant_use_x_in_zombie_escape": "You can't use %s in Zombie Escape.",
+    "no_class_switch_in_this_mode": "The current mode doesn't allow you to switch classes.",
+
+    // Action prompts
+    "press_sprint_to_get_up": "Press SPRINT to get up",
+    "nothing_for_this_ammo": "You don't have anything that uses this type of ammo.",
+    "you_decide_to_leave_some": "You decide to leave some for your team.",
+    "you_cant_purchase_now": "You can't purchase items right now.",
+
+    // Trinket messages
+    "converted_trinket_to_trinket_enchanting_scroll": "You've converted your inferior trinket to a trinket enchanting scroll.",
+
+    // Dark Essence message
+    "unspent_dark_essence_press_x": "You have unspent Dark Essence. Press %q to open the Dark Market.",
+    "unspent_attributes_press_x": "You have unspent attributes. Press %q.",
+
+    // Supply Crate objectives
+    "supply_crate": "Supply Crate",
+    "supplycrate_destroyed": "A Supply Crate has been destroyed. The Undead grow more resilient.",
+    "supplycrate_destroyed_last": "The last Supply Crate has been destroyed! The Undead grow very resilient!",
+    "supplycrate_destroyed_event": "The last Supply has been destroyed! The end is near!",
+    "supplycrate_repaired": "A Supply Crate has been repaired, the Undead have weakened!",
+    "supplycrate_destroyed_x_remain": "%d remain intact.",
+    "x_supplycrates_appeared": "%d Supply Crates have appeared. Humans may buy special items from them.",
+    "need_to_be_near_supply_crate": "You need to be near a Supply Crate!",
+
+    // Phase orb messages
+    "phase_orb_not_enough_room": "Not enough room here.",
+    "phase_orb_too_near_sigil": "Too near a sigil.",
+    "phase_orb_too_near_supplycrate": "Too near a supply crate.",
+    "phase_orb_too_near_exitpoint": "Too near an escape hatch.",
+
+    // Objective Map
+    "class_not_unlocked_yet_unlocked_in_x": "That class is not unlocked yet. It will be unlocked in %s.",
+    "class_is_locked_obj": "This class is locked in objective maps!",
+    "zombie_in_x": "Wave %s zombies will be unlocked in %s",
+    "you_will_be_x_in_x": "You will become %s in %s!",
+    "x_will_be_y_in_z": "%s will become %s in %s!",
+
+    // High priority kill messages
+    "hpk_failed_to_be_killed": "The HPK was not killed! Better luck next time!",
+    "hpk_selected_notify": "%s has become the HPK (High Priority Kill) kill him to get %d XP.",
+    "hpk_self_notify": "You have become the HPK (High Priority Kill), do NOT allow the zombies to kill you!",
+    "attacker_recieved_hpk_bounty": "You recieved %d XP for killing the HPK!",
+    "hpk_killed_by_zombie": "%s killed the HPK and has recieved %d XP!",
+    "hpk_has_disconnected": "The HPK has disconnected! Choosing another.",
+    "hpk_has_died": "The HPK has died and not from a zombie! Choosing another.",
+    "hpk_award": "You have been awarded with %d XP for the death of the HPK!",
+
+    // Sigils point objectives
+    "sigil": "Sanity Sigil",
+    "sigil_corrupted": "A Sanity Sigil has been corrupted. The Undead grow more resilient.",
+    "sigil_corrupted_last": "The last Sanity Sigil has been corrupted! The Undead grow very resilient!",
+    "sigil_corrupted_event": "The last Sanity Sigil has been corrupted! The end is near!",
+    "sigil_uncorrupted": "A Sanity Sigil has been uncorrupted, the Undead have weakened!",
+    "sigil_corrupted_x_remain": "%d remain uncorrupted.",
+    "prop_obj_exit_h": "Escape!",
+    "prop_obj_exit_z": "Stop them!",
+    "x_sigils_appeared": "%d Sanity Sigils have appeared. Humans may buy from and teleport between them.",
+    "has_survived": "has survived!",
+
+    // Message beacon messages
+    "message_beacon_1": "Meet up here",
+    "message_beacon_2": "Need defense here",
+    "message_beacon_3": "Need turrets here",
+    "message_beacon_4": "Need arsenal crates here",
+    "message_beacon_5": "Need medics here",
+    "message_beacon_6": "Resupply box here",
+    "message_beacon_7": "Banished sigil here!",
+    "message_beacon_8": "Need force fields here",
+    "message_beacon_9": "Need explosives here",
+    "message_beacon_10": "Zombies come from here",
+    "message_beacon_11": "Do not enter!!",
+    "message_beacon_12": "Don't go out",
+    "message_beacon_13": "Defend this area",
+    "message_beacon_14": "Defend this spot",
+    "message_beacon_15": "Medics here",
+    "message_beacon_16": "Hatch here!",
+    "message_beacon_17": "Barricade here",
+    "message_beacon_18": "Don't barricade here",
+    "message_beacon_19": "Don't let zombies in here",
+    "message_beacon_20": "This will break",
+    "message_beacon_21": "This place is dangerous!",
+    "message_beacon_22": "Beware of poison!",
+    "message_beacon_23": "Zombies are breaking through here!",
+    "message_beacon_24": "Zombies are coming. Build a barricade!",
+    "message_beacon_25": "Plan B here",
+    "message_beacon_26": "Fishing spot here",
+
+    // Item categories
+    "item_category_favorites": "Favorites",
+    "item_category_guns": "Guns",
+    "item_category_ammo": "Ammo",
+    "item_category_melee": "Melee",
+    "item_category_tools": "Tools",
+    "item_category_deployables": "Deployables",
+    "item_category_other": "Other",
+    "item_category_trinkets": "Trinkets",
+    "item_category_traits": "Traits",
+    "item_category_returns": "Returns",
+    "item_category_seasonal": "Seasonal",
+
+    // Trinket subcategories
+    "trinket_category_offensive": "Offensive",
+    "trinket_category_melee": "Melee",
+    "trinket_category_defensive": "Defensive",
+    "trinket_category_supportive": "Supportive",
+    "trinket_category_performance": "Performance",
+    "trinket_category_elemental": "Elemental",
+
+    // Trait subcategories
+    "trait_category_mechanics": "Mechanics",
+    "trait_category_stats": "Stats",
+    "trait_category_tradeoffs": "Trade-offs",
+    "trait_category_returns": "Returns"
+}

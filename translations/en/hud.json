@@ -1,0 +1,65 @@
+{
+    // Spawn Options
+    "spawn_options": "Spawn Options",
+    "press_jump_to_free_roam": "[JUMP] free roam",
+    "press_lmb_to_spawn": "[LMB] near humans",
+    "press_reload_to_spawn_far": "[RELOAD] at the nearest gas spawn to your view",
+    "press_alt_nest_menu": "[ALT] selection menu",
+    "press_rmb_to_spawn_close": "Press RMB to spawn close to humans",
+    "press_rmb_to_spawn_nearest_gas": "[RMB] nearest spawn point",
+
+    // Spectator Options
+    "spectator_options": "Spectator Options",
+    "press_lmb_to_cycle_forward": "( %s ) Next Player",
+    "press_rmb_to_cycle_backward": "( %s ) Previous Player",
+    "press_reload_to_roam": "( %s ) Free Roam",
+    "press_walk_to_unspectate": "( %s ) Unspectate",
+    "you_are_now_a_spectator": "You are now a spectator.",
+    "unspectate_cooldown": "Cooldown:",
+    "moving_to_spectator_because_gone_x_seconds": "Moving to spectator because gone for longer than %d seconds.",
+    "moving_to_zombie_because_gone_x_seconds": "Moving to zombie because gone for longer than %d seconds.",
+    "observing_x": "Observing %s (%d)",
+    "observing_x_simple": "Observing %s",
+
+    // GAME HUD
+    "prepare_yourself": "Prepare yourself...",
+    "brains_eaten_x": "Brains eaten: %s",
+    "points_x": "Points: %s",
+    "score_x": "Score: %s",
+    "profit_x": "Profit: %s",
+    "points_x_score_x": "Points: %s Score: %s",
+    "points_x_upgrade_x": "Points: %s Upgrade At: %s",
+    "points_x_profit_x": "Points: %s Profit: %s",
+    "points_x_score_x_profit_x": "Points: %s Score: %s Profit: %s",
+    "next_wave_in_x": "Next wave in %s",
+    "wave_ends_in_x": "Wave ends in %s",
+    "wave_x_of_y": "Wave %d of %d",
+    "wave_x": "Wave %d",
+    "round_x_of_y": "Round %d of %d",
+    "zombie_invasion_in_x": "Zombie invasion in %s",
+    "intermission": "Intermission",
+    "press_f2_for_the_points_shop": "Press F2 for the Points Shop!",
+    "breath": "Breath",
+    "waiting_for_next_wave": "Waiting for the next wave to begin...",
+
+    // SIGIL HUD
+    "teleporting_to_sigil": "Teleporting to Sigil %s",
+    "teleporting_to_supplycrate": "Teleporting to Supply Crate %s",
+    "teleporting_to_x": "Teleporting to %s",
+    "press_shift_to_cancel": "Press SHIFT to cancel",
+    "point_at_a_sigil_to_choose_destination": "Point at another sigil to choose destination.",
+    "point_at_a_supplycrate_to_choose_destination": "Point at another supply crate to choose destination.",
+
+    // ZOMBIES HUD
+    "zombie_volunteers": "Zombie Volunteers",
+    "x_will_be_y_soon": "%s will become %s soon!",
+    "you_will_be_x_soon": "You will become %s soon! Press F3 to select boss!",
+    "you_will_be_demiboss_soon": "You will become a demiboss soon! Press F3 to select demiboss!",
+    "boss_will_be_selected_soon": "A zombie will be selected as boss in %d seconds..",
+
+    // Damage Counter
+    "that_life": "That life...",
+    "x_damage_to_barricades": "%d damage to barricades",
+    "x_damage_to_humans": "%d damage to humans",
+    "x_brains_eaten": "%d brains eaten",
+}

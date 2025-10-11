@@ -1,0 +1,50 @@
+{
+    // Worth Menu UI
+    "worthmenu_title": "The Worth Menu",
+    "worthmenu_desc1": "Select the items you're going to start with this round",
+    "worthmenu_desc2": "Select the items and traits you're going to start with this round",
+
+    // Worth Menu Buttons
+    "checkout": "Checkout",
+    "randomize": "Randomize",
+    "clear": "Clear",
+    "veteran_mode": "Veteran Mode",
+    "attributes_mode": "Attributes",
+    "attributes_mode_tooltip": "Attributes Mode: Become stronger by gaining attributes from points earned & surviving waves.",
+
+    // Worth Labels
+    "trait_worth": "Trait Worth: %d / %d",
+    "item_worth": "Item Worth: %d / %d",
+
+    // Menu Warnings
+    "loadout_warning_skill": "This loadout will disable your skills because of veteran mode items.",
+    "loadout_warning_veteran": "Veteran mode items will not be purchased unless you enable it.",
+    "attributesmode_warning": "Skills are disabled while Attributes Mode is active.",
+    "nothing_bought_warning": "You haven't bought anything from the worth menu!",
+
+    // Favorites tab
+    "save_current_cart": "Save the current cart",
+    "purchase_random_saved_cart": "Purchase a Random Saved Cart",
+
+    // Cart row buttons
+    "purchase_this_cart": "Purchase this saved cart",
+    "load_this_cart": "Load this saved cart",
+    "delete_this_cart": "Delete this saved cart",
+    "rename_this_cart": "Rename this saved cart",
+    "move_this_cart_up": "Move this cart up",
+    "move_this_cart_down": "Move this cart down",
+
+    // Cart Labels
+    "item_worth_remaining": "Item Worth Remaining: %d",
+    "trait_worth_remaining": "Trait Worth Remaining: %d",
+    "cart_contains_invalid_items": "This cart contains items that no longer exist!!",
+    "cart_contains_veteran_items": "This cart contains veteran mode items!!",
+    "items_in_cart": "Items in cart:",
+    
+    // Worth Item tooltips
+    "limited_seasonal_item": "Limited seasonal item!\nAvailable only during this season.",
+    "seasonal_item": "Seasonal item!\nAvailable off-season.",
+    "selected_variants": "Selected Variants: %d",
+    "select": "Select",
+    "deselect": "Deselect"
+}

@@ -1,0 +1,125 @@
+{
+
+    // ZOMBIE ESCAPE
+    "ZOMBIE_ESCAPE": "Zombie Escape",
+    "ZE_START": "Escape from the zombies!",
+
+    // Class names
+    "class_ze_zombie": "Escape Zombie",
+    "class_ze_fast_zombie": "Escape Fast Zombie",
+    "class_ze_poison_zombie": "Escape Poison Zombie",
+    "class_ze_ghoul": "Escape Ghoul",
+
+    // Class descriptions
+    "description_ze_zombie": "These are only seen in zombie escape.",
+
+    // Class control schemes
+    "controls_ze_zombie": "> PRIMARY: Claws\n> SECONDARY: Scream",
+    "controls_ze_fast_zombie": "> PRIMARY: Claws\n> SECONDARY: Frenzy\n> RELOAD: Scream",
+    "controls_ze_poison_zombie": "> PRIMARY: Claws\n> SECONDARY: Aegis\n> RELOAD: Scream",
+    "controls_ze_ghoul": "> PRIMARY: Claws\n> SECONDARY: Scream\n> ON HIT HUMAN: Ghoul Touch",
+
+    // ZE
+    "ZE_WEP_BUY": ">>> To open the special Zombie Escape menu, press F3!",
+    "ZE_AFTER_BUY": "Purchased %s for %d points! Type !%s to rebuy this weapon.",
+    "ZE_WEP_EXIST": "You already have this weapon!",
+    "ZE_WEP_COOLDOWN": "Weapon menu on cooldown. (%ss)",
+    "ZE_NADE_EXIST": "You already have this grenade!",
+    "ZE_NADE_COOLDOWN": "Your grenade is still on cooldown. (%ss)",
+    "ZE_NADE_STOCK": "You have %s left in stock.",
+    "ZE_WEP_TITLE": "Use keybinds to make a selection.",
+    "ZE_ITEM_DROP": "Press %s to drop your item.",
+    "ZE_ITEM_DROP_BIND": "Bind a key to +zoom to drop your item.",
+    "ZE_ITEM_USE": "Press %s (on the green circle) to use your item.",
+    "ZE_ITEM_USE_BIND": "Bind a key to +use to use your item.",
+
+    // ZE HUD
+    // points/scraps/brains
+    "ZE_POINTS": "Points: %s",
+    "ZE_SCRAPS": "Scrap: %s",
+    "ZE_BRAINS": "Brains: %s / %s",
+
+    // ZE HUD TEXT
+    "ZE_HUMANS_T": "Humans",
+    "ZE_ZOMBIES_T": "Zombies",
+    "ZE_HUMAN_T": "Human",
+    "ZE_ZOMBIE_T": "Zombie",
+    "ZE_POINT_T": "Point",
+    "ZE_POINTS_T": "Points",
+    "ZE_SCRAP_T": "Scrap",
+    "ZE_SCRAPS_T": "Scraps",
+    "ZE_BRAIN_T": "Brain",
+    "ZE_BRAINS_T": "Brains",
+
+    // ZE WIN/LOSE
+    "ZE_HUMANS_WIN": "Humans Win",
+    "ZE_ZOMBIES_WIN": "Zombies Win",
+
+    // win/lose text
+    "ZE_HWIN_TEXT": "The humans have survived for now.",
+    "ZE_ZWIN_TEXT": "The undead army grows stronger.",
+
+    // ZE ROUND
+    "ZE_WARMUP": "Warm-up: %s",
+    "ZE_DESIRED_ZOMBIES": "A random group of humans will start as zombies.",
+    "ZE_GAME_START": "The game will start in...",
+
+    // ZE ADVERT
+    "ZE_ADVERT_SCREENSHAKE": ">>> Tired of screen shake? Type !noshake to disable shaking!",
+    "ZE_ADVERT_WEAPONS": ">>> You can quick-buy guns by typing !<gunname>. This also works with !he, !ice, !fire, and !upgrade.",
+    "ZE_ADVERT_POINTS": ">>> Earn points by shooting zombies. Spend them in the shop menu\n>>> To open the weapon shop menu, press F2!",
+    "ZE_ADVERT_SCRAP": ">>> Use scrap to upgrade your weapons. Use it in the Special Menu\n>>> To open the special Zombie Escape menu, press F3!",
+    "ZE_ADVERT_DROPWEP": ">>> You can drop your guns by pressing 'Z' or 'B'.",
+
+    // ZE Shop Menu
+    "ZE_SHOP_TITLE": "Zombie Escape - Shop Menu",
+    "ZE_SHOP_COST": "Cost: %s",
+    "ZE_SHOP_STOCK": "Stock: %s",
+    "ZE_SHOP_FREE": "FREE",
+
+    "ZE_SHOPHELPER_CLOSE": "(ESC / F2) Close",
+    "ZE_SHOPHELPER_SELECT": "(KEY_1 to KEY_8) Select Category/Weapon",
+    "ZE_SHOPHELPER_UNSELECT": "(SHIFT / KEY_9) Unselect Category",
+    "ZE_SHOP_CAT": "%d. %s",
+
+    "ZE_SHOP_CAT_PISTOLS": "Pistols",
+    "ZE_SHOP_CAT_SHOTGUNS": "Shotguns",
+    "ZE_SHOP_CAT_SMGS": "SMGs",
+    "ZE_SHOP_CAT_RIFLES": "Rifles",
+    "ZE_SHOP_CAT_SNIPERS": "Snipers",
+    "ZE_SHOP_CAT_HEAVY": "Heavy",
+
+    // ZE SPECIAL MENU
+    "ZE_SPECIAL_TITLE": "Special Items Menu",
+    "ZE_SPECIAL_REBUY": "Rebuy Last Weapon",
+    "ZE_SPECIAL_UPGRADE": "Upgrade Current Weapon",
+    "ZE_SPECIAL_SCRAP_COST": "Cost: %s Scrap",
+
+    // ZE LEADER
+    "ZE_LEADER_TITLE": "Leader Menu",
+    "ZE_LEADER_BACK": "Back",
+    "ZE_LEADER_EXIT": "Exit",
+
+    // leader options
+    "ZE_MARKER_MENU": "Marker Menu",
+    "ZE_LEADER_BEACON": "Toggle Beacon",
+    "ZE_LEADER_GLOW": "Toggle Outline Glow",
+    "ZE_LEADER_TRACERS": "Toggle Weapon Tracers",
+    "ZE_LEADER_RESIGN": "Resign from Leader",
+
+    // marker options
+    "ZE_LMENU_MARKER": "Marker",
+    "ZE_LMENU_ZMTP": "Zombie TP",
+    "ZE_LMENU_DEFEND": "Defend",
+    "ZE_LMENU_CAUTION": "Caution",
+    "ZE_LMENU_CLEAR_RECENT": "Clear Recent Markers",
+    "ZE_LMENU_CLEAR_ALL": "Clear All Markers",
+
+    // LEADER MESSAGES (CLIENT)
+    "ZE_LMESSAGE_MARKER": ">>> Placed a %s marker.",
+    "ZE_LMESSAGE_RECENT_MARKER": ">>> Cleared the most recently placed marker.",
+    "ZE_LMESSAGE_ALL_MARKERS": ">>> Cleared all markers.",
+    "ZE_LMESSAGE_BEACON_TOGGLE": ">>> Toggled beacon %s.",
+    "ZE_LMESSAGE_GLOW_TOGGLE": ">>> Toggled outline glow %s.",
+    "ZE_LMESSAGE_TRACERS_TOGGLE": ">>> Toggled weapon tracers %s."
+}

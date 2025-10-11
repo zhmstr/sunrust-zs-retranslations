@@ -1,0 +1,27 @@
+{
+    // Fleshcraft Structures
+    "fleshcraft_too_many_personal": "You have hit the cap for this structure",
+    "fleshcraft_too_many_global": "Too many exist already",
+    "fleshcraft_creeper_nest": "Creeper Nest",
+    "fleshcraft_description_creeper_nest": "Acts as a spawn point for the undead.",
+    "fleshcraft_dark_extractor": "Dark Extractor",
+    "fleshcraft_description_dark_extractor": "+10% Dark Essence Received for all zombies.",
+    "fleshcraft_flesh_pad": "Flesh Pad",
+    "fleshcraft_description_flesh_pad": "Propels zombies upwards when jumped upon.",
+    "fleshcraft_gib_spire": "Gib Spire",
+    "fleshcraft_description_gib_spire": "Generates gibs over time that heal & provide Status Resist.\nPassively heals nearby zombies.",
+    "fleshcraft_infested_sigil": "Infested Sigil",
+    "fleshcraft_description_infested_sigil": "Infest a Corrupted Sigil, allowing teleportation.\nAllows the construction of other flesh structures.",
+    "fleshcraft_web_wall": "Web Wall",
+    "fleshcraft_description_web_wall": "Blocks humans & bullets.",
+    "fleshcraft_spore_colony": "Spore Colony",
+    "fleshcraft_description_spore_colony": "Fires slowing projectiles at nearby humans.",
+    "fleshcraft_evolution_pod": "Evolution Pod",
+    "fleshcraft_description_evolution_pod": "+20% Chance to evolve on spawn for all zombies.",
+    "fleshcraft_observer": "Observer",
+    "fleshcraft_description_observer": "Inflicts Prey to nearby humans.",
+    "fleshcraft_blister": "Blister",
+    "fleshcraft_description_blister": "Explodes when a human touches or destroys it.\nCannot be seen from a distance.",
+    "fleshcraft_stinger": "Stinger",
+    "fleshcraft_description_stinger": "Attacks nearby humans."
+}

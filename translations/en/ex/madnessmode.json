@@ -1,0 +1,53 @@
+{
+    // Madness Mode
+    "MADNESS_THREAT": "Next Threat: %s",
+    "MADNESS_START": "Madness Mode",
+    "MADNESS_LOADOUT": "You have been given special items.",
+    "MADNESS_THREAT_MESSAGE1": "The Undead have risen stronger",
+
+    // Madness Spawns
+    // EXAMPLE = " TEXT " (not "TEXT")
+
+    // HORDES
+    "MADNESS_DEMI_SPAWN": " A DEMIBOSS HORDE HAS SPAWNED ",
+    "MADNESS_BOSS_SPAWN": " A BOSS HORDE HAS SPAWNED ",
+    "MADNESS_LESSER_SPAWN": " A LESSER EVIL HORDE HAS SPAWNED ",
+    "MADNESS_GREAT_SPAWN": " A GREAT EVIL HORDE HAS SPAWNED ",
+    "MADNESS_ELDRITCH_SPAWN": " AN ELDRITCH EVIL HORDE HAS SPAWNED ",
+
+    // Additional Madness Mode translations
+    "MADNESS_DESC1": "The madness has been unleashed!",
+    "MADNESS_DESC2": "Can you survive the madness?",
+    "MADNESS_POINTS": "Madness Points",
+    
+    "MADNESS_WIN_MESSAGE": "Congratulations!",
+    "MADNESS_WIN_DESCRIPTION": "You have won this map in Madness Mode!",
+    "MADNESS_THREAT_MESSAGE2": "It's getting considerably bad",
+    "MADNESS_THREAT_MESSAGE3": "The Undead have become more powerful",
+    "MADNESS_THREAT_MESSAGE4": "Nothing will stop them",
+    "MADNESS_THREAT_MESSAGE5": "They are getting considerably stronger",
+    "MADNESS_THREAT_MESSAGE6": "The Undead have reached the last threat!",
+    "MADNESS_CHECKPOINT_REACHED": "Threat Level %s/6 has been reached!",
+    "MADNESS_CHECKPOINT_ONE": "Checkpoint #1",
+    "MADNESS_CHECKPOINT_ONE_DESC": "Humans have been given a small chance to survive",
+    "MADNESS_CHECKPOINT_TWO": "Checkpoint #2",
+    "MADNESS_CHECKPOINT_TWO_DESC": "Humans have gotten stronger",
+    "MADNESS_CHECKPOINT_THREE": "Checkpoint #3",
+    "MADNESS_CHECKPOINT_THREE_DESC": "Humans have become incredibly powerful",
+    "MADNESS_POINTS_GIVEN": "You've been given Madness Points!!, use them wisely.",
+    "MADNESS_ITEMS_GIVEN": "You've been given useful items in your inventory!",
+    "MADNESS_BARRICADE_GIVEN": "Use the Barricade Kit on hard parts of the map!",
+    
+    "MADNESS_ITEM_NOT_AVAIL": "This item is not available",
+
+    "MADNESS_PERK_GIVEN": "You have been given a Perk.",
+    "MADNESS_BOUNTY_GIVEN": "You have been given a Bounty.",
+    "MADNESS_SPECIAL_GIVEN": "You have been given a Special Item.",
+    "MADNESS_SPECIAL_GIVEN_DESC": "A strange injector grants you...",
+
+    "MADNESS_RELIC_GIVEN": "You have been given a Relic Chest.",
+    "MADNESS_RELIC_GIVEN_DESC": "Something valuable is inside this chest...",
+    "MADNESS_2RELICS_GIVEN": "You have been given 2 Relic Chests.",
+    "MADNESS_2RELICS_GIVEN_DESC": "Something valuable is inside these chests...",
+    "MADNESS_REMORT_GIVEN": "You have received a Full Remort Level!"
+}

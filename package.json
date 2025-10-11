@@ -1,0 +1,16 @@
+{
+  "name": "sunrust-zs-retranslations",
+  "version": "0.2.1",
+  "description": "SRZS translations...",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "json5": "^2.2.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
