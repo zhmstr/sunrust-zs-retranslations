@@ -2,9 +2,10 @@
   "name": "sunrust-zs-retranslations",
   "version": "0.2.1",
   "description": "SRZS translations...",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npx ts-node convert_lua.ts"
   },
   "author": "",
   "license": "ISC",
