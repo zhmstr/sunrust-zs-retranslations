@@ -328,12 +328,7 @@
     "phase_orb_too_near_supplycrate": "Too near a supply crate.",
     "phase_orb_too_near_exitpoint": "Too near an escape hatch.",
 
-    // Objective Map
-    "class_not_unlocked_yet_unlocked_in_x": "That class is not unlocked yet. It will be unlocked in %s.",
-    "class_is_locked_obj": "This class is locked in objective maps!",
-    "zombie_in_x": "Wave %s zombies will be unlocked in %s",
-    "you_will_be_x_in_x": "You will become %s in %s!",
-    "x_will_be_y_in_z": "%s will become %s in %s!",
+    //"you_will_be_x_in_x": "You will become %s in %s!", // DUPLICATED AND PROB WRONG
 
     // High priority kill messages
     "hpk_failed_to_be_killed": "The HPK was not killed! Better luck next time!",
