@@ -1,4 +1,11 @@
 *.lock
 package-lock.json
-node_modules/*
+node_modules/
+dist
+jspm_packages/
 out/
+npm-debug.log*
+*.tsbuildinfo
+# KDE folder info
+.directory
+.Trash-*
