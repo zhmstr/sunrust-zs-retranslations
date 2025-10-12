@@ -4,11 +4,7 @@ English is the standard language you should base your IDs on.
 If something isn't found in your language file then it will fall back to English.
 
 ## How To Contribute
-<<<<<<< HEAD
 You can contribute by translating by one of languages which GMod supports, you can see the table [here](https://wiki.facepunch.com/gmod/Addon_Localization#supportedlanguages).
-=======
-You can contribute by translating it into one of languages supported by GMod See the list [here](https://wiki.facepunch.com/gmod/Addon_Localization#supportedlanguages).
->>>>>>> 48ab08d (Fix a few grammar in README.md)
 
 1. Clone this repository to your computer by using `git clone`, GitHub [Desktop](https://desktop.github.com/download/) or [GitHub CLI](https://cli.github.com/)
 2. Navigate to the folder `sunrust-zs-retranslations/translations`
@@ -40,9 +36,4 @@ Optionally, you can compile the files to Lua. This step is not required.
     3. In **Replace**, use this: `"$1": $2,`
 
 
-<<<<<<< HEAD
 Don't worry about comments in JSON, it will be ignored.
-=======
-
-- Don't worry about comments in JSON, it will be ignored. Since it's using [JSON5](https://json5.org/)
->>>>>>> 48ab08d (Fix a few grammar in README.md)
