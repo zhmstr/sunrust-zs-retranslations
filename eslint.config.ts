@@ -5,7 +5,7 @@ import json from "@eslint/json";
 import { defineConfig } from "eslint/config";
 import prettier from "eslint-plugin-prettier"
 import prettierConfig from "eslint-config-prettier"
-
+import eslintPluginJsonc from 'eslint-plugin-jsonc';
 
 export default defineConfig([
   {
@@ -17,6 +17,7 @@ export default defineConfig([
     },
     languageOptions: { globals: globals.node },
   },
+  ...eslintPluginJsonc.configs['flat/recommended-with-json5'],
   tseslint.configs.recommended,
   {
     files: ["**/*.json5"],

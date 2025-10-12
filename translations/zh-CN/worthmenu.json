@@ -1,0 +1,51 @@
+{
+    // Worth Menu UI
+    "worthmenu_title": "开局菜单",
+    "worthmenu_desc1": "选择你将要在此轮游戏开始时使用的物品",
+    "worthmenu_desc2": "选择你将要在此轮游戏开始时使用的物品及特性",
+
+    // Worth Menu Buttons
+    "checkout": "购买",
+    "randomize": "随机选择",
+    "clear": "清除",
+    "veteran_mode": "老兵模式",
+    "attributes_mode": "属性点模式",
+    "attributes_mode_tooltip": "属性点模式: 通过获取点数或在波数中存活获取属性点强化个人能力",
+
+
+    // Worth Labels
+    "trait_worth": "特性 Worth 点: %d / %d",
+    "item_worth": "物品 Worth 点: %d / %d",
+
+    // Menu Warnings
+    "loadout_warning_skill": "此配置由于使用老兵模式物品将会禁用你的技能树技能",
+    "loadout_warning_veteran": "老兵模式物品除非开启否则将不会被购买",
+    "attributesmode_warning": "在属性点模式激活时技能树将会被禁用",
+    "nothing_bought_warning": "你还没有在开局菜单购买任何物品!",
+
+    // Favorites tab
+    "save_current_cart": "保存当前购买配置",
+    "purchase_random_saved_cart": "随机选择一个你保存的购买配置并购买",
+
+    // Cart row buttons
+    "purchase_this_cart": "根据此购买配置购买",
+    "load_this_cart": "载入此购买配置",
+    "delete_this_cart": "删除此购买配置",
+    "rename_this_cart": "重命名此购买配置",
+    "move_this_cart_up": "向上移动此购买配置",
+    "move_this_cart_down": "向下移动此购买配置",
+
+    // Cart Labels
+    "item_worth_remaining": "物品 Worth 点剩余: %d",
+    "trait_worth_remaining": "特性 Worth 点剩余: %d",
+    "cart_contains_invalid_items": "此购买配置有不存在的物品!!",
+    "cart_contains_veteran_items": "此购买配置存在老兵模式的物品!!",
+    "items_in_cart": "总物品数量: %d",
+    
+    // Worth Item tooltips
+    "limited_seasonal_item": "季节限定物品!\n仅可在对应季节活动可用.",
+    "seasonal_item": "季节物品!\n可在非季节活动使用.",
+    "selected_variants": "已选择分支: %d",
+    "select": "选择",
+    "deselect": "取消选择"
+}

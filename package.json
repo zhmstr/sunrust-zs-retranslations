@@ -5,7 +5,7 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "build": "npx ts-node compile.ts"
+    "build": "npx ts-node macro.ts"
   },
   "author": "",
   "license": "ISC",
@@ -17,6 +17,7 @@
     "@typescript-eslint/parser": "^8.46.0",
     "eslint": "^9.37.0",
     "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-jsonc": "^2.21.0",
     "eslint-plugin-prettier": "^5.5.4",
     "globals": "^16.4.0",
     "json5": "^2.2.3",

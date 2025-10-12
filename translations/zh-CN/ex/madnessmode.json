@@ -1,0 +1,49 @@
+{
+    // Madness Mode
+    "MADNESS_THREAT": "下一威胁等级: %s",
+    "MADNESS_START": "疯狂模式",
+    "MADNESS_LOADOUT": "你获得了特殊物品。",
+    "MADNESS_THREAT_MESSAGE1": "丧尸变得更加强大",
+
+    // Madness Spawns
+    // EXAMPLE = " TEXT " (not "TEXT")
+
+    // HORDES
+    "MADNESS_DEMI_SPAWN": " 一波次级BOSS潮正在袭来 ",
+    "MADNESS_BOSS_SPAWN": " 一波BOSS潮正在袭来 ",
+    "MADNESS_LESSER_SPAWN": " 一波LESSER EVIL潮正在袭来 ",
+    "MADNESS_GREAT_SPAWN": " 一波GREAT EVIL潮正在袭来 ",
+    "MADNESS_ELDRITCH_SPAWN": " 一波ELDRITCH EVIL潮正在袭来 ",
+
+    // Additional Madness Mode translations
+    "MADNESS_DESC1": "疯狂模式已开启！",
+    "MADNESS_DESC2": "你能在疯狂中生存下来吗？",
+    "MADNESS_POINTS": "疯狂点数",
+    "MADNESS_WIN_MESSAGE": "恭喜！",
+    "MADNESS_WIN_DESCRIPTION": "你已成功在疯狂模式下通关此地图！",
+    "MADNESS_THREAT_MESSAGE2": "情况变得相当糟糕",
+    "MADNESS_THREAT_MESSAGE3": "丧尸获得了更强大的力量",
+    "MADNESS_THREAT_MESSAGE4": "没有什么能阻止它们了",
+    "MADNESS_THREAT_MESSAGE5": "它们正在显著变强",
+    "MADNESS_THREAT_MESSAGE6": "丧尸已达到最终威胁等级！",
+    "MADNESS_CHECKPOINT_REACHED": "已达到威胁等级 %s/6！",
+    "MADNESS_CHECKPOINT_ONE": "检查点 #1",
+    "MADNESS_CHECKPOINT_ONE_DESC": "人类获得了微小的生存机会",
+    "MADNESS_CHECKPOINT_TWO": "检查点 #2",
+    "MADNESS_CHECKPOINT_TWO_DESC": "人类变得更加强大",
+    "MADNESS_CHECKPOINT_THREE": "检查点 #3",
+    "MADNESS_CHECKPOINT_THREE_DESC": "人类变得无比强大",
+    "MADNESS_POINTS_GIVEN": "你获得了疯狂点数！！请明智使用。",
+    "MADNESS_ITEMS_GIVEN": "你的物品栏中获得了有用的物品！",
+    "MADNESS_BARRICADE_GIVEN": "在地图的困难区域使用路障工具包！",
+    "MADNESS_ITEM_NOT_AVAIL": "此物品不可用",
+    "MADNESS_PERK_GIVEN": "你获得了一个特长。",
+    "MADNESS_BOUNTY_GIVEN": "你获得了一个赏金。",
+    "MADNESS_SPECIAL_GIVEN": "你获得了一个特殊物品。",
+    "MADNESS_SPECIAL_GIVEN_DESC": "你获得了一个奇怪的注射器...",
+    "MADNESS_RELIC_GIVEN": "你获得了一个遗物宝箱。",
+    "MADNESS_RELIC_GIVEN_DESC": "这个宝箱里有珍贵的东西...",
+    "MADNESS_2RELICS_GIVEN": "你获得了两个遗物宝箱。",
+    "MADNESS_2RELICS_GIVEN_DESC": "这些宝箱里有珍贵的东西...",
+    "MADNESS_REMORT_GIVEN": "你获得了一次转生所需的全部等级！"
+}

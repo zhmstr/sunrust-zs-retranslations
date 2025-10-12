@@ -1,0 +1,411 @@
+{
+    // General Game
+    /*
+        Valid languages (from gmod's menu): bg cs da de el en en-PT es-ES et fi fr ga-IE he hr hu it ja ko lt nl no pl pt-BR pt-PT ru sk sv-SE th tr uk vi zh-CN zh-TW
+    */
+    // WEAPONS/ITEMS/SKILLS/TRINKETS/TRAITS AND OTHER STUFF AREN'T YET SUPPORTED
+    // REASON IS CONSTANT UPDATES/BALANCE CHANGES TO THEM
+    // Ammo stuff
+
+
+
+    // Ammo stuff
+    "ammo_regeneration": "子弹在 %s后重新填装",
+    "no_ammo_here": "目前没有弹药",
+
+    // Wave and game state
+    "arsenal_upgraded": "军械库已更新",
+    "auto_reloaded": "你的 %s 已自动装填完毕",
+    "final_wave": "最终波已开始!",
+    "final_wave_sub": "所有丧尸均已解锁且已无法重生!",
+    "wave_x_has_begun": "第 %d 波已开始",
+    "x_unlocked": "%d 已解锁",
+    "wave_x_is_over": "第 %d 波已结束",
+    "wave_x_is_over_sub": "丧尸已暂时停止复活",
+    "points_for_surviving": "通过生存 你得到了 %d 点数",
+    "scrap_for_surviving": "通过生存 你得到了 %d 零件",
+
+    // UI / Notifications
+    "ok_and_no_reminder": "好了,不要再跳出这个信息了",
+    "classic_mode_warning": "本服务器运行的是‘经典模式’僵尸生存\\n经典模式会极大地改变游戏玩法，被改变的内容有：\\n* 无法选择僵尸种类。所有人都只能使用经典僵尸\\n* 没有例如钉子、炮台之类的防守道具\\n* 波数更多同时每波时间更快\\n\\n这个模式是v1版本的僵尸生存！\\n\\n-- 运行经典模式的服务器会在屏幕左下角显示‘经典模式’",
+    "classic_mode": "经典模式",
+    "resist_x": "抗性：%d%%",
+    "right_click_to_hammer_nail": "使用锤子右键钉钉子",
+    "nails_x": "钉子：%d",
+    "resupply_box": "补给箱",
+    "purchase_now": "现在购买!",
+    "integrity_x": "完整度: %d%%",
+    "empty": "空",
+    "manual_control": "手动控制",
+    "arsenal_crate": "军械库",
+
+    // Nest messages
+    "not_enough_room_for_a_nest": "没有足够空间放下巢穴!",
+    "too_close_to_another_nest": "太靠近其他巢穴",
+    "nest_created": "巢穴已开始建造!完成建造以让丧尸在此处复活",
+    "nest_built_by_x": "一个巢穴被 %s 建造 已成为当前丧尸复活点",
+    "nest_destroyed": "一个巢穴已被摧毁",
+    "nest_destroyed_by_zombie": "一个巢穴已被 %s 摧毁",
+    "wait_x_seconds_before_making_a_new_nest": "你必须等待 %d秒后才能建造新的巢穴",
+    "too_close_to_a_human": "太靠近人类!",
+    "too_close_to_a_spawn": "太靠近一个丧尸出生点",
+    "too_close_to_uncorrupt": "太靠近一个未被腐化的水晶!",
+    "too_far_from_corrupt": "太远离一个被腐化的水晶!",
+    "x_limit_per_corrupt": "此建筑在此被腐化水晶仅可放置 %s 个!",
+    "x_has_built_this_nest_and_is_still_around": "%s 建造了这个巢穴且他还在附近,所以你无法摧毁这个巢穴",
+    "no_other_nests": "你无法在只剩下一个巢穴的情况下摧毁巢穴",
+    "there_are_too_many_nests": "此处巢穴过多 你无法继续建造更多巢穴",
+    "you_have_made_too_many_nests": "你已达到巢穴建造上限,拆除一个巢穴后再尝试建造",
+    "no_free_channel": "你已经放置太多的信标",
+
+    // Shop/Items messages
+    "tier_x_items_unlock_at_wave_y": "阶级 %d 的道具将在第 %d 波解锁",
+    "tier_x_items": "阶级 %d 物品",
+    "humans_furthest_from_sigils_are_zombies": "离水晶最远的人类将被选为起始丧尸",
+    "out_of_stock": "这个物品已售空!",
+    "out_of_stock_personal": "这个物品的个人配额已售空!",
+    "acquired_x_y": "获得了 %d 个 %s",
+    "obtained_x_y_ammo": "获得了 %d 发 %s 弹药",
+    "obtained_x_y_reagent": "给予 %d 发 %s 弹药给 %s",
+    "obtained_x_y_ammo_from_z": "获得了 %d 发 %s 的弹药来自 %s ",
+
+    // Healing/Buff messages
+    "healed_x_by_y": "%s 治疗了你 %d HP",
+    "temphealed_x_by_y": "%s 给予了你 %d 的临时血量",
+    "healed_x_by_y_armor": "%s 治疗了你 %d 的血甲",
+    "healed_x_for_y": "治疗了 %s %d HP",
+    "temphealed_x_for_y": "给予了 %s %d 的临时血量",
+    "buffed_x_with_y_for_z": "%s 使用 %s 给予你 %d 秒的buff",
+    "buffed_x_with_a_y_for_z": "给 %s 用 %s 提供了 %d秒的buff",
+    "removed_your_nail": "%s 移除了你的一根钉子",
+    "giving_items_to": "将物品给予 %s",
+
+    // Remantling/Crafting messages
+    "weapon_remantler": "重组机",
+    "remantle_success": "武器重组",
+    "remantle_success_tr": "饰品重组",
+    "remantle_used": "%d 个零件已从你的重组机中制作出",
+    "alchemy_used": "%d 个炼金矿石已从你的炼金台中制作出",
+    "remantle_cannot": "你已拥有此武器的这一类型",
+    "remantle_cannot_switch": "你不能切换此武器到其另一种分支",
+    "remantle_branch_disabled": "这种武器的分支线路已被禁用",
+
+    // Inventory/trinket messages
+    "obtained_a_inv": "%s 以被添加至你的装备栏中",
+    "you_already_have_this_trinket": "你的装备栏中已拥有这个饰品",
+    "you_already_have_this_trait": "你已经拥有这个特性",
+    "swapped_trinket": "你已切换至一个更高等级的饰品",
+    "they_already_have_this_trinket": "目标已拥有此饰品",
+    "they_already_have_too_many": "目标已拥有这些饰品",
+    "you_cannot_carry_more_comps": "你不能携带更多此类原材料",
+    "they_cannot_carry_more_comps": "目标不能携带更多此类原材料",
+    "you_require_an_alchemists_wand": "你必须持有 Alchemist's Wand 才能捡起此物品",
+    "obtained_inv_item_from_z": "你的装备栏添加了 %s ，是 %s 给的 ",
+
+    // Deployable/Item messages
+    "deployable_lost": "你失去了 %s ",
+    "deployable_claimed": "你现在拥有 %s ",
+    "trinket_consumed": "你的 %s 已被消耗且激活",
+    "trinket_used": "你的 %s 已被激活",
+    "skill_used": "你的 %s 技能已触发",
+    "ran_out_of_ammo": "你的 %s 的弹药已消耗完毕",
+    "trinket_recharged": "你的 %s 已冷却完毕且可以再次使用",
+
+    // Evolution/Progression messages
+    "evolves_in_to_x_on_wave_y": "你进化为 %s 在第 %d 波",
+    "evolves_in_to_x_in_special": "特别情况时你会进化为 %s ",
+    "you_have_been_awarded_xp_for_cades": "从造防线中获得了 %d 经验",
+    "you_have_been_awarded_points_for_cades": "从造防线中获得了 %d 点数",
+    "need_to_be_near_transponder": "你需要靠近一个素材打印机",
+    "cant_buy_props": "你无法购买那个素材",
+    "weapon_tier_x_unlocked": "阶级 %d 的武器已解锁",
+    "past_wave_buy_limit": "这个物品已无法购买",
+    "receieved_x_dark_essence_for_killing_y": "获得%d点黑暗精华，击杀%s后。",
+    "gunk_jump_message": "按 JUMP 挣脱!!!",
+
+    // Skill system messages
+    "unspent_skill_points_press_x": "你有未使用的技能点数. 按 %q 来解锁新技能.",
+    "x_requires_a_skill_you_dont_have": "%s 需要你先解锁上个技能! ",
+    "you_ascended_to_level_x": "你升到了%d 级!",
+    "you_have_remorted_now_rl_x": "你已经转生，你的转生等级为 %d !",
+    "you_now_have_x_extra_sp": "你现在有 %d 额外点数!",
+    "x_has_remorted_to_rl_y": "%s 已转生至 %d 级",
+    "you_have_reset_all": "所有的技能和技能点数已被重置",
+
+    // Additional game messages
+    "capture_progress": "已占领 %s - %s/%s",
+    "infliction_rate": "感染率: %d%%",
+    "infliction_reached": "%d%% 的人类已经死亡!",
+    "infliction_reached_classic": "丧尸数量已达到 %d%%!",
+    "infliction_reached_class_unlocked": "丧尸数量已达到 %d%%! %s 已解锁",
+    "survive": "从丧尸的攻势中生存下来!",
+    "survive_wave": "/////丧尸突击进行中/////",
+    "survive_wave_sub": "在时间结束前生存下来!",
+    "disconnect_killed": "%s 的掉线使 %s增加了一个人头数.",
+    "nail_removed_by": " %s移除了 %s 的一根钉子",
+    "deployable_placed_by": "%s [%s] 部署 %s 在位置(%s).",
+
+    // Purchase restrictions and messages
+    "late_buyer_warning": "你的Late Buyer技能被激活, 所以你不能在前半场游戏结束之前购买任何物品.",
+    "round_half_over_arsenal_prices_updated": "波数已过半,商店内的物品价格已更改",
+    "need_to_be_near_arsenal_crate": "你需要靠近军械库或者水晶来购买物品",
+    "need_to_be_near_remantler": "你需要靠近重组机",
+    "need_to_be_near_remantler_or_sigil": "你需要靠近重组机或者水晶",
+    "need_to_be_near_alchemy_table": "你需要靠近合成台",
+    "need_to_be_near_sigil": "你需要靠近水晶",
+    "need_to_be_near_uncorrupted_sigil": "你不能在腐化水晶购买物品",
+    "target_need_to_be_near_shop": "接收者需要在商店附近",
+    "too_early_for_honed": "你还不能升级这把武器到磨砺等级直到第一波后的90秒",
+    "too_early_for_perfected": "你还不能升级这把武器到完美等级直到第一波后的3分钟",
+    "cant_party_buy_item": "你无法大量购买此物品",
+    "cant_purchase_right_now": "你还无法购买此物品.",
+    "purchase_is_on_cooldown_for_x_seconds": "此物品购买冷却还有 %d 秒",
+    "cant_purchase_this_type": "你无法购买此类型物品.",
+    "dont_have_enough_points": "你没有足够的点数.",
+    "dont_have_enough_dark_essence": "你没有足够的灵魂精华.",
+    "dont_have_enough_bounty_tokens": "你没有足够的赏金代币.",
+    "dont_have_enough_artifact_tokens": "你没有足够的遗物代币.",
+    "dont_have_enough_seasonal_points": "你没有足够的季节点数.",
+
+    // Upgrade restrictions
+    "upgrade_can_only_be_purchased_once_per_life": "每条生命只能购买一次这个升级.",
+    "upgrade_can_only_be_purchased_twice_per_life": "每条生命只能购买两次这个升级.",
+    "upgrade_can_only_be_purchased_on_pointsave": "这个升级只能在pointsave服务器购买",
+    "upgrade_can_only_be_purchased_on_main": "这个升级只能在main服务器购买.",
+    "upgrade_is_on_cooldown_for_x_seconds": "这个升级冷却还有 %d 秒!",
+    "upgrade_unlocks_wave_x": "这个升级会在 %d 波解锁!",
+    "upgrade_currently_has_no_stocks": "这个升级目前没有存货!",
+    "upgrade_cannot_be_purchased_during_intermission": "这个升级无法在波数间隔时购买!",
+    "upgrade_cannot_be_purchased_whilst_boss": "这个升级无法在成为boss时购买!",
+    "upgrade_cannot_be_purchased_whilst_one_active_horde": "这个群体增益无法在已有群体增益时购买.",
+    "upgrade_cannot_be_purchased_whilst_one_active": "其他进攻性增益无法在已有进攻性增益激活时购买.",
+    "upgrade_cannot_be_purchased_team_limit_for_x": "你的队伍有太多 %ss",
+    "upgrade_cannot_currently_be_purchased": "这个升级目前无法被购买!",
+    "upgrade_cannot_selected_weapon_x": "无法升级 %s",
+
+    // Crafting and item restrictions
+    "need_to_have_enough_scrap": "你没有足够的零件.",
+    "cannot_dismantle": "你不能分解这个道具.",
+    "cannot_upgrade_trinket": "你不能升级这个饰品.",
+    "cannot_drop": "你不能丢弃这个道具.",
+    "cannot_give": "你不能给其他人这个道具.",
+
+    // Purchase success messages
+    "purchased_x_for_y_points": "购买 %s 用了 %d 的点数 !",
+    "purchased_x_for_y_dark_essence": "购买 %s 用了 %d 的灵魂精华!",
+    "purchased_x_for_y_bounty_tokens": "购买 %s 用了 %d 的赏金代币 !",
+    "purchased_x_for_y_bounty_token": "购买 %s 用了 %d 的赏金代币 !",
+    "purchased_x_for_y_artifact_tokens": "购买 %s 用了 %d 的遗物代币 !",
+    "purchased_x_for_y_artifact_token": "购买 %s 用了 %d 的遗物代币 !",
+    "purchased_x_for_y_seasonal_points": "购买 %s 用了 %d 的季节点数 !",
+    "purchased_x_missing_scrap_for_y_points": "购买 %s 缺少的零件用了 %d 的点数.",
+    "received_x_from_y": "收到 %s 来自 %s! 多么大度!",
+    "purchased_for_x_denied": "%s 不接受你的馈赠!",
+    "purchase_for_target_on_cooldown": "你为他人购买此物品的冷却还有 %d 秒",
+    "created_x_for_y_scrap": "制作 %s  用了 %d 的零件!",
+
+    // Misc game messages
+    "give_time_before_suicide": "在自杀前请给其他玩家复活的时间!",
+    "no_spare_ammo_to_give": "没有多余子弹可以给予其他玩家!",
+    "no_person_in_range": "距离内无玩家!",
+    "no_food_here": "目前没有食物",
+
+    // Redemption and death messages
+    "you_redeemed": "你已复活!",
+    "x_redeemed": "%s 已复活",
+    "kill_the_last_human": "杀死最后一名人类!",
+    "you_are_the_last_human": "你是最后一个人类!",
+    "x_zombies_out_to_get_you": "%d 个丧尸正在杀你来的路上",
+    "you_have_died": "你死了",
+    "you_were_killed_by_x": "你被 %s 杀死",
+    "you_were_kicked_by_x": "你被 %s 踢到了小腿",
+
+    // Point/objective messages
+    "point_lost": "已丢失 %s !",
+    "point_won": "%s 已被占领!",
+    "point_spawn": "%s 已降临!",
+
+    // Class and zombie messages
+    "you_are_x": "你是 %s!",
+    "x_has_risen_as_y": "%s 已成为 %s!!",
+    "x_rose_as_y": "%s 已成为 %s!!",
+    "x_demis_risen": "%d 名次级boss已出现!",
+    "x_has_risen": "出现了一名boss丧尸!",
+    "x_has_been_slain_as_y": "%s 作为 %s 已被击杀!",
+    "cant_use_worth_anymore": "你不能再使用开局菜单了!",
+    "class_not_unlocked_will_be_unlocked_x": "这个种类尚未解锁.它将在第 %d 波开始时解锁",
+    "you_are_already_a_x": "你已经是 %s 了!",
+    "you_will_spawn_as_a_x": "你将重生为 %s",
+    "you_are_now_a_x": "你现在是 %s 了",
+
+    // Crafting messages
+    "crafting_successful": "成功制作!",
+    "x_crafted_y": "%s 制作了 %s",
+    "cooking_success": "食物合成：",
+    "flask_success": "烧瓶合成：",
+
+    // Zombie Escape
+    "escape_from_the_zombies": "从尸群中逃出生天!",
+    "zombie_escape": "丧尸逃生!",
+
+    // Cading stuff
+    "too_close_to_another_nail": "太靠近另一个钉子",
+    "object_too_damaged_to_be_used": "这个物件已经过于损坏并且无法再次被使用",
+    "cant_remove_nails_of_superior_player": "对方玩家转生等级比你高,别想着把他钉子拔了",
+    "too_close_to_another_structure": "太靠近另一个钉子",
+    "not_enough_room_for_a_structure": "没有足够大的空间放置物件",
+    "x_has_finished_building": "%s 已完成建造",
+    "nothing_to_destroy": "没有需要摧毁的物件",
+    "too_far_from_infested_sigil": "太远离一个侵染水晶!",
+    "x_limit_per_infested_sigil": "此建筑在此侵染水晶仅可放置 %s 个!",
+
+    // Admin messages
+    "x_turned_on_noclip": "%s 开启了无碰撞飞行",
+    "x_turned_off_noclip": "%s 关闭了无碰撞飞行",
+
+    // Discount and special messages
+    "x_discount_for_buying_between_waves": "在波数间隔时,购买物品将会有 %d%% 折扣",
+    "number_of_initial_zombies_this_game": "这场游戏的初始丧尸数量为 (%d%%): %d",
+    "humans_closest_to_spawns_are_zombies": "最靠近丧尸重生点的人类将被选为丧尸",
+    "unlocked_on_wave_x": "会在 %d 波解锁",
+
+    // Waiting and loading messages
+    "waiting_for_players": "正在等待玩家...",
+    "requires_x_people": "需要 %d 名玩家",
+    "packing_others_object": "正在拿起其他玩家的 %s",
+    "packing": "正在拿起 %s",
+    "loading": "载入中...",
+    "next_round_in_x": "下一回合在：%s",
+    "warning": "警告！",
+    "ready": "准备",
+
+    // Interaction messages
+    "impossible": "不可能",
+    "trying_to_put_nails_in_glass": "是什么让你觉得把钉子钉在玻璃上是个好主意?",
+    "boss_class_select": "下次你被选为Boss时你将重生为 %s",
+    "demi_class_select": "下次你被选为次级Boss时你将重生为 %s",
+    "person_has_weapon": "他已经有这把武器了",
+    "person_not_on_friends": "你已设置只能将物品给予你的好友",
+
+    // Mode restrictions
+    "cant_do_that_in_classic_mode": "你不能在经典模式下那么做",
+    "cant_use_x_in_classic_mode": "你不能在经典模式下使用 %s",
+    "cant_use_x_in_objective_mode": "你不能在OBJ地图中使用 %s",
+    "cant_use_x_in_zombie_escape": "你不能在Zombie Escape地图中使用 %s",
+    "no_class_switch_in_this_mode": "目前这个模式不允许你切换丧尸种类",
+
+    // Action prompts
+    "press_sprint_to_get_up": "按下 冲刺键 爬起",
+    "nothing_for_this_ammo": "你没有任何东西可使用这种子弹",
+    "you_decide_to_leave_some": "留点物品给你的队友吧",
+    "you_cant_purchase_now": "你目前不能购买此物品",
+
+    // Trinket messages
+    "converted_trinket_to_trinket_enchanting_scroll": "你已将你不想要的饰品转换为一个'饰品附魔卷轴'",
+
+    // Dark Essence message
+    "unspent_dark_essence_press_x": "你有未使用的灵魂精华. 按 %q 打开灵魂市场使用",
+    "unspent_attributes_press_x": "你有未使用的属性点. 按 %q 打开属性菜单",
+
+    // Supply Crate objectives
+    "supply_crate": "军械水晶",
+    "supplycrate_destroyed": "一个军械水晶已被摧毁. 丧尸变得更抗打!",
+    "supplycrate_destroyed_last": "最后一个军械水晶已被摧毁. 丧尸变得非常抗打!",
+    "supplycrate_destroyed_event": "最后一个军械水晶已被摧毁.终焉将至!",
+    "supplycrate_repaired": "一个军械水晶被修复, 丧尸被削弱!",
+    "supplycrate_destroyed_x_remain": "%d 个军械水晶未被摧毁",
+    "x_supplycrates_appeared": "%d 个军械水晶已降临. 人类可以从中购买特殊物品",
+    "need_to_be_near_supply_crate": "你需要靠近军械水晶!",
+
+    // Phase orb messages
+    "phase_orb_not_enough_room": "空间过小",
+    "phase_orb_too_near_sigil": "太靠近水晶了!",
+    "phase_orb_too_near_supplycrate": "太靠近军械水晶了!",
+    "phase_orb_too_near_exitpoint": "太靠近逃生通道了!",
+
+    // Objective Map
+    "class_not_unlocked_yet_unlocked_in_x": "这个丧尸种类还未解锁. 它将会在 %s 时解锁",
+    "class_is_locked_obj": "这个丧尸种类在OBJ地图禁用",
+    "zombie_in_x": "波数 %s 的丧尸会在 %s 内解锁",
+    "you_will_be_x_in_x": "你将变成 %s 在 %s 的时候!",
+    "x_will_be_y_in_z": "%s 将会变成 %s 在 %s 的时候!",
+
+    // High priority kill messages
+    "hpk_failed_to_be_killed": "高价值目标没有被杀死! 再接再厉!",
+    "hpk_selected_notify": "%s 现在是高价值目标,杀死他以获得 %d 经验",
+    "hpk_self_notify": "你已经变成高价值目标, 请勿让丧尸杀死你",
+    "attacker_recieved_hpk_bounty": "你击杀高价值目标获得 %d 经验",
+    "hpk_killed_by_zombie": "%s 击杀高价值目标获得 %d 经验",
+    "hpk_has_disconnected": "高价值目标已断开连接! 正在选择其他玩家",
+    "hpk_has_died": "高价值目标死于意外!正在选择其他玩家",
+    "hpk_award": "高价值目标已死亡,你获得了 %d 经验!",
+
+    // Sigils point objectives
+    "sigil": "水晶",
+    "sigil_corrupted": "一个水晶已被腐化. 丧尸变得更抗打",
+    "sigil_corrupted_last": "最后一个水晶已被腐化! 丧尸变得非常抗打!",
+    "sigil_corrupted_event": "最后一个水晶已被腐化! 终焉将至!",
+    "sigil_uncorrupted": "一个水晶被修复, 丧尸被削弱!",
+    "sigil_corrupted_x_remain": "%d个水晶未被腐化",
+    "prop_obj_exit_h": "快逃!",
+    "prop_obj_exit_z": "阻止他们!",
+    "x_sigils_appeared": "%d 个水晶已降临. 人类可以从水晶购买物品或在它们之间传送",
+    "has_survived": "已逃离",
+
+    // Message beacon messages
+    "message_beacon_1": "在这里集合",
+    "message_beacon_2": "这里需要防守",
+    "message_beacon_3": "这里需要炮台",
+    "message_beacon_4": "此处需要军械库",
+    "message_beacon_5": "这里需要医师",
+    "message_beacon_6": "这里有补给箱",
+    "message_beacon_7": "放逐水晶在这里",
+    "message_beacon_8": "这里需要防御立场",
+    "message_beacon_9": "这里需要爆炸物",
+    "message_beacon_10": "丧尸从这里来",
+    "message_beacon_11": "不要进去!!",
+    "message_beacon_12": "不要出去",
+    "message_beacon_13": "防守这个区域",
+    "message_beacon_14": "防守这个地点",
+    "message_beacon_15": "医师在这",
+    "message_beacon_16": "逃脱通道在这!",
+    "message_beacon_17": "在这里建立防线",
+    "message_beacon_18": "别在这里建立防线",
+    "message_beacon_19": "不要让丧尸到达这里",
+    "message_beacon_20": "此处将被破开",
+    "message_beacon_21": "这里很危险!",
+    "message_beacon_22": "小心剧毒!",
+    "message_beacon_23": "丧尸正在破坏此处!",
+    "message_beacon_24": "丧尸来了.在此处建造防线!",
+    "message_beacon_25": "这里为B计划",
+    "message_beacon_26": "此处为钓鱼地点",
+
+    // Item categories
+
+    "item_category_favorites": "收藏夹",
+    "item_category_guns": "枪械",
+    "item_category_ammo": "弹药",
+    "item_category_melee": "近战",
+    "item_category_tools": "工具",
+    "item_category_deployables": "放置物",
+    "item_category_other": "其他",
+    "item_category_trinkets": "饰品",
+    "item_category_traits": "特性",
+    "item_category_returns": "偿还",
+    "item_category_seasonal": "季节物品",
+
+    // Trinket subcategories
+
+    "trinket_category_offensive": "枪械",
+    "trinket_category_melee": "近战",
+    "trinket_category_defensive": "防御",
+    "trinket_category_supportive": "支援",
+    "trinket_category_performance": "性能",
+    "trinket_category_elemental": "元素",
+
+    // Trait subcategories
+    "trait_category_mechanics": "机制",
+    "trait_category_stats": "属性",
+    "trait_category_tradeoffs": "权衡",
+    "trait_category_returns": "偿还"
+}

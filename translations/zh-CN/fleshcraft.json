@@ -1,0 +1,28 @@
+{
+    // Fleshcraft Structures
+
+    "fleshcraft_too_many_personal": "此建筑类型已到达个人建造上限",
+    "fleshcraft_too_many_global": "此建筑类型全局建造数量过多",
+    "fleshcraft_creeper_nest": "鲜血巢穴",
+    "fleshcraft_description_creeper_nest": "可作为丧尸的一个复活点",
+    "fleshcraft_dark_extractor": "暗能萃取器",
+    "fleshcraft_description_dark_extractor": "+10% 丧尸灵魂精华获取量",
+    "fleshcraft_flesh_pad": "血肉跳板",
+    "fleshcraft_description_flesh_pad": "将跳跃到其上方的丧尸弹起",
+    "fleshcraft_gib_spire": "尸块尖塔",
+    "fleshcraft_description_gib_spire": "随时间生成可治疗并提供负面状态抗性的尸块\n范围内回复周围丧尸的生命值",
+    "fleshcraft_infested_sigil": "侵染水晶",
+    "fleshcraft_description_infested_sigil": "可侵染一个腐化水晶,允许丧尸传送到此地点\n并允许建造其他基于此建筑的血肉造物",
+    "fleshcraft_web_wall": "血网之墙",
+    "fleshcraft_description_web_wall": "阻挡人类及子弹通过",
+    "fleshcraft_spore_colony": "血孢菌落",
+    "fleshcraft_description_spore_colony": "向附近人类发射减速球",
+    "fleshcraft_evolution_pod": "进化仓",
+    "fleshcraft_description_evolution_pod": "+20% 重生时当前丧尸类型得到进化概率",
+    "fleshcraft_observer": "监视者",
+    "fleshcraft_description_observer": "其附近人类将被附加Prey状态",
+    "fleshcraft_blister": "血泡地雷",
+    "fleshcraft_description_blister": "在人类接触或摧毁时爆炸\n在一定距离外不可见",
+    "fleshcraft_stinger": "血刺",
+    "fleshcraft_description_stinger": "攻击附近的人类"
+}

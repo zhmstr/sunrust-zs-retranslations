@@ -1,0 +1,64 @@
+{
+    // Spawn Options
+    "spawn_options": "重生选择",
+    "press_jump_to_free_roam": "[JUMP] 进入自由视角",
+    "press_lmb_to_spawn": "[LMB] 重生至附近人类",
+    "press_reload_to_spawn_far": "[RELOAD] 重生到最靠近你视角的丧尸重生点",
+    "press_alt_nest_menu": "[ALT] 选择菜单",
+    "press_rmb_to_spawn_close": "按右键重生到最靠近人类的重生点",
+    "press_rmb_to_spawn_nearest_gas": "[RMB] 重生到最近的重生点",
+    // Spectator Options
+    "spectator_options": "观察者选项",
+    "press_lmb_to_cycle_forward": "( %s ) 下一个玩家",
+    "press_rmb_to_cycle_backward": "( %s ) 上一个玩家",
+    "press_reload_to_roam": "( %s ) 自由视角",
+    "press_walk_to_unspectate": "( %s ) 解除观察",
+    "you_are_now_a_spectator": "你现在是观察者",
+    "unspectate_cooldown": "解除观察冷却:",
+    "moving_to_spectator_because_gone_x_seconds": "你被移至观察者因为挂机超过 %d 秒",
+    "moving_to_zombie_because_gone_x_seconds": "你被移至丧尸阵营因为挂机超过 %d 秒",
+    "observing_x": "正在观察 %s (%d)",
+    "observing_x_simple": "正在观察 %s",
+
+    // GAME HUD
+    "prepare_yourself": "做好准备...",
+    "brains_eaten_x": "击杀数：%s",
+    "points_x": "点数：%s",
+    "score_x": "已赚：%s",
+    "points_x_score_x": "点数：%s  分数：%s",
+    "points_x_upgrade_x": "点数：%s  升级：%s",
+    "points_x_profit_x": "点数：%s  已赚：%s",
+    "points_x_score_x_profit_x": "点数：%s  分数：%s  已赚：%s",
+    "next_wave_in_x": "下一波会在 %s 内到来",
+    "wave_ends_in_x": "波数在 %s 内结束",
+    "wave_x_of_y": "波数 %d 之 %d",
+    "wave_x": "波数 %d",
+    "round_x_of_y": "回合 %d 之 %d",
+    "zombie_invasion_in_x": "丧尸侵略时间还剩 %s",
+    "intermission": "波数间隔",
+    "press_f2_for_the_points_shop": "按F2打开点数商店",
+    "breath": "氧气",
+    "waiting_for_next_wave": "正在等待下一波开始...",
+
+    // SIGIL HUD
+    "teleporting_to_sigil": "正在传送至水晶 %s",
+    "teleporting_to_supplycrate": "正在传送至军械水晶 %s",
+    "teleporting_to_x": "正在传送至 %s",
+    "press_shift_to_cancel": "按下 SHIFT 以取消",
+    "point_at_a_sigil_to_choose_destination": "鼠标指向目标水晶以决定传送目的地",
+    "point_at_a_supplycrate_to_choose_destination": "鼠标指向目标军械水晶以决定传送目的地",
+
+    // ZOMBIES HUD
+    "zombie_volunteers": "丧尸自愿者",
+    "x_will_be_y_soon": "%s 即将成为 %s",
+    "you_will_be_x_soon": "你即将成为 %s! 按F3选择Boss!",
+    "you_will_be_demiboss_soon": "你即将成为次级BOSS! 按F3选择Boss!",
+    "boss_will_be_selected_soon": "一名丧尸即将在%d秒后被选为Boss",
+
+    // Damage Counter
+    "that_life": "这条命内...",
+    "x_damage_to_barricades": "对防线造成了 %d 伤害",
+    "x_damage_to_humans": "对人类造成了 %d 伤害",
+    "x_brains_eaten": "击杀了 %d 名人类"
+
+}
