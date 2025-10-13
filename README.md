@@ -11,7 +11,6 @@ You can contribute by translating by one of languages which GMod supports, you c
 3. Duplicate the folder `en` and rename to a compatible language code (e.g.: `pl` will target to Polish language.)
 4. Now modify the JSON files in the folder that you've duplicated
 
-This JSONc
 Optionally, you can compile the files to Lua. This step is not required.
 1. Make sure you have NodeJS installed
 2. Install all dependencies by running `npm install` in the repository folder.
