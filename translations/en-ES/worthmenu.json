@@ -1,0 +1,54 @@
+{
+    // Worth Menu UI
+    "worthmenu_desc1": "Selecciona los artículos con los que comenzarás esta ronda",
+    "worthmenu_desc2": "Selecciona los artículos y traits con los que comenzarás esta ronda",
+	
+    // Worth Menu Buttons
+	"checkout": "Pagar",
+	"randomize": "Aleatorio",
+	"clear": "Borrar",
+	"veteran_mode": "Modo Veterano",
+	"attributes_mode": "Atributos",
+	"attributes_mode_tooltip": "Modo Atributos: Hazte más fuerte ganando atributos por puntos ganados y sobreviviendo a las oleadas.",
+    
+    // Worth Labels
+    "trait_worth": "Valor de Traits: %d / %d",
+    "item_worth": "Valor de Worth: %d / %d",
+
+    // Query
+    "save_cart": "Guardar Carrito",
+	"enter_cart_name": "Ingresa un nombre para este carrito:",
+	"rename_cart": "Renombrar Carrito",
+	"enter_new_cart_name": "Ingresa un nuevo nombre para este carrito:",
+    // Menu Warnings
+	"loadout_warning_skill": "Este deshabilitará tus skills debido a los artículos del modo veterano.",
+	"loadout_warning_veteran": "Los artículos del modo veterano no se comprarán a menos que lo habilites.",
+	"attributesmode_warning": "Las skills están deshabilitadas mientras el Modo Atributos está activo.",
+	"nothing_bought_warning": "¡No has comprado nada en el menú de valor!",
+
+    // Favorites tab
+	"save_current_cart": "Guardar el carrito actual",
+	"purchase_random_saved_cart": "Comprar un carrito guardado al azar",
+    
+    // Cart row buttons
+	"purchase_this_cart": "Comprar este carrito guardado",
+	"load_this_cart": "Cargar este carrito guardado",
+	"delete_this_cart": "Eliminar este carrito guardado",
+	"rename_this_cart": "Renombrar este carrito guardado",
+	"move_this_cart_up": "Mover este carrito hacia arriba",
+	"move_this_cart_down": "Mover este carrito hacia abajo",
+
+    // Cart Labels
+	"item_worth_remaining": "Valor de Worth restantes: %d",
+	"trait_worth_remaining": "Valor de Traits restantes: %d",
+	"cart_contains_invalid_items": "Este carrito contiene artículos que ya no existen!!",
+	"cart_contains_veteran_items": "Este carrito contiene artículos del modo veterano!!",
+	"items_in_cart": "Artículos en el carrito:",
+    
+    // Worth Item tooltips
+	"limited_seasonal_item": "¡Artículo seasonal limitado!\nDisponible solo durante esta temporada.",
+	"seasonal_item": "¡Artículo seasonal!\nDisponible fuera de temporada.",
+	"selected_variants": "Variantes seleccionadas: %d",
+	"select": "Seleccionar",
+	"deselect": "Deseleccionar"
+}

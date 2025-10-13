@@ -1,0 +1,38 @@
+{
+	"waiting_for_players": "Esperando jugadores...",
+    
+    // Item categories
+    "item_category_favorites": "Favoritos",
+    "item_category_guns": "Armas",
+    "item_category_ammo": "Munición",
+    "item_category_melee": "Melee", // ?
+    "item_category_tools": "Herramientas",
+    "item_category_deployables": "Desplegables",
+    "item_category_other": "Otros",
+    "item_category_trinkets": "Trinkets",
+    "item_category_traits": "Traits",
+    "item_category_returns": "Returns",
+    "item_category_seasonal": "Seasonal",
+
+    // Trinket subcategories
+    "trinket_category_offensive": "Ofensivo",
+    "trinket_category_melee": "Melee",
+    "trinket_category_defensive": "Defensivo",
+    "trinket_category_supportive": "Soporte",
+    "trinket_category_performance": "Rendimiento",
+    "trinket_category_elemental": "Elemental",
+
+    // Trait subcategories
+    "trait_category_mechanics": "Mecánicas",
+    "trait_category_stats": "Estadísticas",
+    "trait_category_tradeoffs": "Compensaciones",
+    "trait_category_returns": "Returns",
+
+    // Whole Words
+    "ok": "ok",
+    "cancel": "cancelar",
+    "yes": "si",
+    "name": "nombre"
+
+    // Messages that doesn't exists in language file will always default to english in-game.
+}

@@ -12,7 +12,6 @@
     "attributes_mode": "属性点模式",
     "attributes_mode_tooltip": "属性点模式: 通过获取点数或在波数中存活获取属性点强化个人能力",
 
-
     // Worth Labels
     "trait_worth": "特性 Worth 点: %d / %d",
     "item_worth": "物品 Worth 点: %d / %d",

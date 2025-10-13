@@ -7,6 +7,7 @@
     "press_alt_nest_menu": "[ALT] 选择菜单",
     "press_rmb_to_spawn_close": "按右键重生到最靠近人类的重生点",
     "press_rmb_to_spawn_nearest_gas": "[RMB] 重生到最近的重生点",
+    
     // Spectator Options
     "spectator_options": "观察者选项",
     "press_lmb_to_cycle_forward": "( %s ) 下一个玩家",

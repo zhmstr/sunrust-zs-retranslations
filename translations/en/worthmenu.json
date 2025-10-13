@@ -11,6 +11,12 @@
     "veteran_mode": "Veteran Mode",
     "attributes_mode": "Attributes",
     "attributes_mode_tooltip": "Attributes Mode: Become stronger by gaining attributes from points earned & surviving waves.",
+    
+    // Query
+	"save_cart": "Save Cart",
+	"enter_cart_name": "Enter a name for this cart:",
+	"rename_cart": "Rename Cart",
+	"enter_new_cart_name": "Enter a new name for this cart:",
 
     // Worth Labels
     "trait_worth": "Trait Worth: %d / %d",

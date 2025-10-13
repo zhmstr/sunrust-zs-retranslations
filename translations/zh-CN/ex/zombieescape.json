@@ -1,125 +1,127 @@
 {
 
     // ZOMBIE ESCAPE
-    "ZOMBIE_ESCAPE": "Zombie Escape",
-    "ZE_START": "Escape from the zombies!",
+    "ZOMBIE_ESCAPE": "僵尸逃跑",
+    "ZE_START": "从尸群中逃出生天!",
 
     // Class names
-    "class_ze_zombie": "Escape Zombie",
-    "class_ze_fast_zombie": "Escape Fast Zombie",
-    "class_ze_poison_zombie": "Escape Poison Zombie",
-    "class_ze_ghoul": "Escape Ghoul",
-
+	"class_ze_zombie": "ZE普通僵尸",
+	"class_ze_fast_zombie": "ZE快速僵尸",
+	"class_ze_poison_zombie": "ZE剧毒僵尸",
+	"class_ze_ghoul": "ZE食尸鬼",
+    
+    
     // Class descriptions
-    "description_ze_zombie": "These are only seen in zombie escape.",
+	"description_ze_zombie": "这些僵尸只在僵尸逃跑中出现.",
 
     // Class control schemes
-    "controls_ze_zombie": "> PRIMARY: Claws\n> SECONDARY: Scream",
-    "controls_ze_fast_zombie": "> PRIMARY: Claws\n> SECONDARY: Frenzy\n> RELOAD: Scream",
-    "controls_ze_poison_zombie": "> PRIMARY: Claws\n> SECONDARY: Aegis\n> RELOAD: Scream",
-    "controls_ze_ghoul": "> PRIMARY: Claws\n> SECONDARY: Scream\n> ON HIT HUMAN: Ghoul Touch",
+	"controls_ze_zombie": "> PRIMARY: 攻击\n> SECONDARY: 嚎叫",
+	"controls_ze_fast_zombie": "> PRIMARY: 攻击\n> SECONDARY: 狂暴\n> RELOAD: 嚎叫",
+	"controls_ze_poison_zombie": "> PRIMARY: 攻击\n> SECONDARY: 减伤\n> RELOAD: 嚎叫",
+	"controls_ze_ghoul": "> PRIMARY: 攻击\n> SECONDARY: 嚎叫\n> 击中人类时: 易感染状态",
 
     // ZE
-    "ZE_WEP_BUY": ">>> To open the special Zombie Escape menu, press F3!",
-    "ZE_AFTER_BUY": "Purchased %s for %d points! Type !%s to rebuy this weapon.",
-    "ZE_WEP_EXIST": "You already have this weapon!",
-    "ZE_WEP_COOLDOWN": "Weapon menu on cooldown. (%ss)",
-    "ZE_NADE_EXIST": "You already have this grenade!",
-    "ZE_NADE_COOLDOWN": "Your grenade is still on cooldown. (%ss)",
-    "ZE_NADE_STOCK": "You have %s left in stock.",
-    "ZE_WEP_TITLE": "Use keybinds to make a selection.",
-    "ZE_ITEM_DROP": "Press %s to drop your item.",
-    "ZE_ITEM_DROP_BIND": "Bind a key to +zoom to drop your item.",
-    "ZE_ITEM_USE": "Press %s (on the green circle) to use your item.",
-    "ZE_ITEM_USE_BIND": "Bind a key to +use to use your item.",
+	"ZE_WEP_BUY": ">>> 按下 F3 打开 ZE 特殊功能菜单!",
+	"ZE_AFTER_BUY": "购买 %s 用了 %d 的点数! 输入!%s 重复购买",
+	"ZE_WEP_EXIST": "你已经拥有此武器",
+	"ZE_WEP_COOLDOWN": "武器菜单正在冷却(%ss)",
+	"ZE_NADE_EXIST": "你已经拥有这种手雷了!",
+	"ZE_NADE_COOLDOWN": "你的手雷购买正在冷却 (%ss)",
+	"ZE_NADE_STOCK": "你还剩 %s 个手雷可供购买",
+	"ZE_WEP_TITLE": "按下键盘相应按键进行选择",
+	"ZE_ITEM_DROP": "按 %s 丢弃神器",
+	"ZE_ITEM_DROP_BIND": "将按键绑定执行'+zoom'命令以丢弃神器",
+	"ZE_ITEM_USE": "按 %s (对准绿圈) 使用神器",
+	"ZE_ITEM_USE_BIND": "将按键绑定执行'+use'命令以使用神器",
 
     // ZE HUD
     // points/scraps/brains
-    "ZE_POINTS": "Points: %s",
-    "ZE_SCRAPS": "Scrap: %s",
-    "ZE_BRAINS": "Brains: %s / %s",
+	"ZE_POINTS": "点数: %s",
+	"ZE_SCRAPS": "零件: %s",
+	"ZE_BRAINS": "击杀数: %s / %s",
 
     // ZE HUD TEXT
-    "ZE_HUMANS_T": "Humans",
-    "ZE_ZOMBIES_T": "Zombies",
-    "ZE_HUMAN_T": "Human",
-    "ZE_ZOMBIE_T": "Zombie",
-    "ZE_POINT_T": "Point",
-    "ZE_POINTS_T": "Points",
-    "ZE_SCRAP_T": "Scrap",
-    "ZE_SCRAPS_T": "Scraps",
-    "ZE_BRAIN_T": "Brain",
-    "ZE_BRAINS_T": "Brains",
+	"ZE_HUMANS_T": "人类",
+	"ZE_ZOMBIES_T": "僵尸",
+	"ZE_HUMAN_T": "人类",
+	"ZE_ZOMBIE_T": "僵尸",
+	"ZE_POINT_T": "点数",
+	"ZE_POINTS_T": "点数",
+	"ZE_SCRAP_T": "零件",
+	"ZE_SCRAPS_T": "零件",
+	"ZE_BRAIN_T": "击杀",
+	"ZE_BRAINS_T": "击杀",
 
     // ZE WIN/LOSE
-    "ZE_HUMANS_WIN": "Humans Win",
-    "ZE_ZOMBIES_WIN": "Zombies Win",
+	"ZE_HUMANS_WIN": "人类胜利",
+	"ZE_ZOMBIES_WIN": "僵尸胜利",
 
     // win/lose text
-    "ZE_HWIN_TEXT": "The humans have survived for now.",
-    "ZE_ZWIN_TEXT": "The undead army grows stronger.",
+	"ZE_HWIN_TEXT": "人类幸存了下来.",
+	"ZE_ZWIN_TEXT": "僵尸变得更为壮大.",
 
     // ZE ROUND
-    "ZE_WARMUP": "Warm-up: %s",
-    "ZE_DESIRED_ZOMBIES": "A random group of humans will start as zombies.",
-    "ZE_GAME_START": "The game will start in...",
+	"ZE_WARMUP": "热身时间: %s",
+	"ZE_DESIRED_ZOMBIES": "一批人类将会随机选为僵尸",
+	"ZE_GAME_START": "游戏将开始于...",
 
     // ZE ADVERT
-    "ZE_ADVERT_SCREENSHAKE": ">>> Tired of screen shake? Type !noshake to disable shaking!",
-    "ZE_ADVERT_WEAPONS": ">>> You can quick-buy guns by typing !<gunname>. This also works with !he, !ice, !fire, and !upgrade.",
-    "ZE_ADVERT_POINTS": ">>> Earn points by shooting zombies. Spend them in the shop menu\n>>> To open the weapon shop menu, press F2!",
-    "ZE_ADVERT_SCRAP": ">>> Use scrap to upgrade your weapons. Use it in the Special Menu\n>>> To open the special Zombie Escape menu, press F3!",
-    "ZE_ADVERT_DROPWEP": ">>> You can drop your guns by pressing 'Z' or 'B'.",
+	"ZE_ADVERT_SCREENSHAKE": ">>> 厌倦了屏幕抖动? 输入 !noshake 关闭.",
+	"ZE_ADVERT_WEAPONS": ">>> 可通过输入 !<gunname> 快速购买枪械. 也可输入!he, !ice, !fire, 及 !upgrade 实现快速操作.",
+	"ZE_ADVERT_POINTS": ">>> 通过射击僵尸获取点数以在商店消费\n>>> 按 F2 打开ZE商店菜单!",
+	"ZE_ADVERT_SCRAP": ">>> 在特殊功能菜单使用零件升级武器\n>>>按 F3 打开ZE特殊功能菜单!",
+	"ZE_ADVERT_DROPWEP": ">>> 可尝试按下'Z'或'B'丢弃当前武器.",
 
     // ZE Shop Menu
-    "ZE_SHOP_TITLE": "Zombie Escape - Shop Menu",
-    "ZE_SHOP_COST": "Cost: %s",
-    "ZE_SHOP_STOCK": "Stock: %s",
-    "ZE_SHOP_FREE": "FREE",
+	"ZE_SHOP_TITLE": "僵尸逃跑 - 武器商店",
+	"ZE_SHOP_COST": "价格: %s",
+	"ZE_SHOP_STOCK": "库存: %s",
+	"ZE_SHOP_FREE": "免费",
 
-    "ZE_SHOPHELPER_CLOSE": "(ESC / F2) Close",
-    "ZE_SHOPHELPER_SELECT": "(KEY_1 to KEY_8) Select Category/Weapon",
-    "ZE_SHOPHELPER_UNSELECT": "(SHIFT / KEY_9) Unselect Category",
-    "ZE_SHOP_CAT": "%d. %s",
+	"ZE_SHOPHELPER_CLOSE": "(ESC / F2) 关闭",
+	"ZE_SHOPHELPER_SELECT": "(数字键1-8) 选择类别/武器",
+	"ZE_SHOPHELPER_UNSELECT": "(SHIFT / 数字键9) 取消类别选择",
 
-    "ZE_SHOP_CAT_PISTOLS": "Pistols",
-    "ZE_SHOP_CAT_SHOTGUNS": "Shotguns",
-    "ZE_SHOP_CAT_SMGS": "SMGs",
-    "ZE_SHOP_CAT_RIFLES": "Rifles",
-    "ZE_SHOP_CAT_SNIPERS": "Snipers",
-    "ZE_SHOP_CAT_HEAVY": "Heavy",
+	"ZE_SHOP_CAT": "%d. %s",
+	"ZE_SHOP_CAT_PISTOLS": "手枪",
+	"ZE_SHOP_CAT_SHOTGUNS": "霰弹枪",
+	"ZE_SHOP_CAT_SMGS": "冲锋枪",
+	"ZE_SHOP_CAT_RIFLES": "突击步枪",
+	"ZE_SHOP_CAT_SNIPERS": "狙击枪",
+	"ZE_SHOP_CAT_HEAVY": "重型武器",
+
 
     // ZE SPECIAL MENU
-    "ZE_SPECIAL_TITLE": "Special Items Menu",
-    "ZE_SPECIAL_REBUY": "Rebuy Last Weapon",
-    "ZE_SPECIAL_UPGRADE": "Upgrade Current Weapon",
-    "ZE_SPECIAL_SCRAP_COST": "Cost: %s Scrap",
+	"ZE_SPECIAL_TITLE": "特殊物品菜单",
+	"ZE_SPECIAL_REBUY": "重新购买武器",
+	"ZE_SPECIAL_UPGRADE": "升级当前武器",
+	"ZE_SPECIAL_SCRAP_COST": "消耗: %s 个零件",
 
     // ZE LEADER
-    "ZE_LEADER_TITLE": "Leader Menu",
-    "ZE_LEADER_BACK": "Back",
-    "ZE_LEADER_EXIT": "Exit",
+	"ZE_LEADER_TITLE": "指挥菜单",
+	"ZE_LEADER_BACK": "返回",
+	"ZE_LEADER_EXIT": "退出",
 
     // leader options
-    "ZE_MARKER_MENU": "Marker Menu",
-    "ZE_LEADER_BEACON": "Toggle Beacon",
-    "ZE_LEADER_GLOW": "Toggle Outline Glow",
-    "ZE_LEADER_TRACERS": "Toggle Weapon Tracers",
-    "ZE_LEADER_RESIGN": "Resign from Leader",
+	"ZE_MARKER_MENU": "标点菜单",
+	"ZE_LEADER_BEACON": "打开/关闭指挥划线",
+	"ZE_LEADER_GLOW": "打开/关闭指挥高亮",
+	"ZE_LEADER_TRACERS": "打开/关闭指挥弹道",
+	"ZE_LEADER_RESIGN": "辞任指挥",
 
     // marker options
-    "ZE_LMENU_MARKER": "Marker",
-    "ZE_LMENU_ZMTP": "Zombie TP",
-    "ZE_LMENU_DEFEND": "Defend",
-    "ZE_LMENU_CAUTION": "Caution",
-    "ZE_LMENU_CLEAR_RECENT": "Clear Recent Markers",
-    "ZE_LMENU_CLEAR_ALL": "Clear All Markers",
+	"ZE_LMENU_MARKER": "标点",
+	"ZE_LMENU_ZMTP": "僵尸传送",
+	"ZE_LMENU_DEFEND": "防守点",
+	"ZE_LMENU_CAUTION": "注意",
+	"ZE_LMENU_CLEAR_RECENT": "清除上一个标点",
+	"ZE_LMENU_CLEAR_ALL": "清除全局标点",
 
     // LEADER MESSAGES (CLIENT)
-    "ZE_LMESSAGE_MARKER": ">>> Placed a %s marker.",
-    "ZE_LMESSAGE_RECENT_MARKER": ">>> Cleared the most recently placed marker.",
-    "ZE_LMESSAGE_ALL_MARKERS": ">>> Cleared all markers.",
-    "ZE_LMESSAGE_BEACON_TOGGLE": ">>> Toggled beacon %s.",
-    "ZE_LMESSAGE_GLOW_TOGGLE": ">>> Toggled outline glow %s.",
-    "ZE_LMESSAGE_TRACERS_TOGGLE": ">>> Toggled weapon tracers %s."
+	"ZE_LMESSAGE_MARKER": ">>> 放置了一个 %s 标点.",
+	"ZE_LMESSAGE_RECENT_MARKER": ">>> 清除上一个标点.",
+	"ZE_LMESSAGE_ALL_MARKERS": ">>> 清除所有标点.",
+	"ZE_LMESSAGE_BEACON_TOGGLE": ">>> 打开/关闭指挥划线 %s .",
+	"ZE_LMESSAGE_GLOW_TOGGLE": ">>> 打开/关闭指挥高亮 %s .",
+	"ZE_LMESSAGE_TRACERS_TOGGLE": ">>> 打开/关闭指挥弹道 %s .",
 }

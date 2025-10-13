@@ -11,6 +11,7 @@ You can contribute by translating by one of languages which GMod supports, you c
 3. Duplicate the folder `en` and rename to a compatible language code (e.g.: `pl` will target to Polish language.)
 4. Now modify the JSON files in the folder that you've duplicated
 
+This JSONc
 Optionally, you can compile the files to Lua. This step is not required.
 1. Make sure you have NodeJS installed
 2. Install all dependencies by running `npm install` in the repository folder.
@@ -27,13 +28,4 @@ Optionally, you can compile the files to Lua. This step is not required.
 
 ## Notes
 
-- If there's a missing text ID in this repository, you can add it manually by using RegEX
-    1. Go to Visual Studio Code or any tool which supports RegEx replace
-    2. In **Find**, use this pattern: 
-    ```
-    translate\.AddLocalization\("(\w+)", \{\n\s+\["en"\]\s*=\s*(".+")[,\s][\s\S]*?\}\s*\)
-    ```
-    3. In **Replace**, use this: `"$1": $2,`
-
-
-Don't worry about comments in JSON, it will be ignored.
+- Don't worry about comments in JSON, it will be ignored

@@ -405,5 +405,11 @@
     "trait_category_mechanics": "Mechanics",
     "trait_category_stats": "Stats",
     "trait_category_tradeoffs": "Trade-offs",
-    "trait_category_returns": "Returns"
+    "trait_category_returns": "Returns",
+
+    // Whole Words
+    "ok": "ok",
+    "cancel": "cancel",
+    "yes": "yes",
+    "name": "name"
 }
