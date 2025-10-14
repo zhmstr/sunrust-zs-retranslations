@@ -7,35 +7,36 @@ import {
 	rmSync,
 	lstatSync
 } from "fs";
-import {writeFile} from "fs/promises"
+import { writeFile } from "fs/promises";
 import path, { basename, dirname, extname, join } from "path";
+import ac from "ansi-colors";
 
 /////////////////////////////////////////////////////////////////////////
 /////                             CONFIG                            /////
+/////////////////////////////////////////////////////////////////////////
 
-const DEFAULT_LANGUAGE: SupportedLangs = "en";
-
-const OUTPUT_PATH = `./out/`;
-const INPUT_PATH = `./translations/`;
+const OUTPUT_PATH = process.env.OUTPUT_PATH || `./out/`;
+const INPUT_PATH = process.env.INPUT_PATH || `./translations/`;
 
 // If true, messages will be checked for any possible issues. ATM they're just don't included
-const CHECK_MESSAGE = false;
-
+const CHECK_MESSAGE = !!process.env.CHECK_MESSAGE || true;
 // If true, all messages will be bundled into one single file called "bundle.lua"
-const BUNDLE_ALL = true;
+const BUNDLE_ALL = !!process.env.BUNDLE_ALL || false;
 
 // If true, during output will split into the structure similar to INPUT_PATH.
-const MULTIFOLDER_MODE = false;
+const MULTIFOLDER_MODE = !!process.env.MULTIFOLDER_MODE || false;
 
+// All files that went wrong will be in this lua file (ignored if BUNDLE_ALL is true)
+// Set to empty string to disable this feature.
+const ODDS_FILE = process.env.ODDS_FILE || "_invalid_entries_";
 
-// All files that went wrong will be there
-const ODDS_FILE = "_issues_"; 
+// Hide warnings by checking messages.
+const HIDE_WARNINGS = !!process.env.HIDE_WARNINGS || false;
 
-
-
+const DEFAULT_LANGUAGE: SupportedLangs = "en";
 //////////////////////////////////////////////////////
 ///                                               ////
-///      DON'T TOUCH THE CODE YOU DON'T KNOW      ////
+///                      CODE                     ////
 ///                                               ////
 //////////////////////////////////////////////////////
 
@@ -47,16 +48,22 @@ function checkTranslation(translation: LocalizationText): boolean {
 
 	const defTranslation = textIDMap.get(translation.textID);
 
+	// Check if it's not translated, by comparing with default language.
 	if (
 		DEFAULT_LANGUAGE &&
 		defTranslation?.get(DEFAULT_LANGUAGE)?.message === translation.message
 	) {
+		warn(
+			`[${translation.langCode}] Untranslated message at "${translation.textID}", check for "${DEFAULT_LANGUAGE}/${translation.file}" translation`
+		);
 		return false;
 	}
+
+	// Check if message is empty
 	if (!translation.message) {
 		if (translation["langCode"] === DEFAULT_LANGUAGE) {
-			console.warn(
-				`Missing default text at ${translation.textID}, check for "${DEFAULT_LANGUAGE}/${translation.file}" translation`,
+			warn(
+				`[${translation.langCode}] Missing default text at "${translation.textID}", check for "${DEFAULT_LANGUAGE}/${translation.file}" translation`
 			);
 		}
 		return false;
@@ -65,23 +72,36 @@ function checkTranslation(translation: LocalizationText): boolean {
 }
 
 /**
- * Localization Object for storing information about translation.
+ * Shows a yellow warning message.
  */
+const warn = (msg: string) => !HIDE_WARNINGS && console.warn(ac.yellow(msg));
+
+/**
+ * A helper function that works like lua assert
+ * Because I won't install any external library just for this.
+ */
+function assert(cond: boolean, msg: string) {
+	if (cond !== true) throw Error(msg);
+}
+
+
 interface LocalizationText {
 	langCode: SupportedLangs;
 	textID: string;
 	message: string;
 	file: string;
 }
+/**
+ * Localization Object for storing information about translation.
+ */
 function LocalizationText(
 	langCode: SupportedLangs,
 	textID: string,
 	message: string,
-	file: string,
+	file: string
 ): LocalizationText {
 	return { langCode, textID, message, file };
 }
-
 
 const REF_TRANSLATION = '\t["<LANGUAGE_CODE>"] = "<LOCALIZED_TEXT>"'; // semicolon is added later...
 const REF_LUATEXT =
@@ -89,7 +109,7 @@ const REF_LUATEXT =
 // https://wiki.facepunch.com/gmod/Addon_Localization#supportedlanguages
 
 // tbh, I'd use new Set() for this, as it's faster than arrays... but I couldn't use dynamic typing.
-const _supportedLanguages = [
+const __supportedLanguages = [
 	"bg",
 	"cs",
 	"da",
@@ -121,24 +141,27 @@ const _supportedLanguages = [
 	"uk",
 	"vi",
 	"zh-CN",
-	"zh-TW",
+	"zh-TW"
 ] as const;
 
-type SupportedLangs = (typeof _supportedLanguages)[number];
+type SupportedLangs = (typeof __supportedLanguages)[number];
 
-
-// const GModSupportedLangs = new Set(_supportedLanguages); // I'm tired of cluttering this file
+// const GModSupportedLangs = new Set(_supportedLanguages); // I don't want to pollute global scope
+/**
+ * Check if str is a supported language, only for typeguard purposes.
+ */
 function isSupportedLanguage(str: string): str is SupportedLangs {
-	return (_supportedLanguages as unknown as string[]).includes(str); // ye, this is slow.
+	return (__supportedLanguages as unknown as string[]).includes(str); // ye, this is slow.
 	// return GModSupportedLangs.has(str as any);
 }
-
 
 // textID[] -> lang[] -> message
 const textIDMap = new Map<string, Map<SupportedLangs, LocalizationText>>();
 
 /**
- * It reads the file and parses the JSON to Record
+ * It reads the file and parses the file to a record.
+ * @param file
+ * @returns A record of string to string, or undefined if the file couldn't be parsed.
  */
 function _parseFileToRecord(file: string): Record<string, string> | undefined {
 	const extension = path.extname(file);
@@ -153,13 +176,15 @@ function _parseFileToRecord(file: string): Record<string, string> | undefined {
 			return JSON5.parse(buffer);
 		// you can put others parsers, such as YAML, INI or TOML...
 		default:
-			console.warn(
-				`File ${file} was ignored, isn't a compatible extension filename.`,
+			warn(
+				`File ${file} was ignored, isn't a compatible extension filename.`
 			);
 			return;
 	}
 }
-
+/**
+ * Add entry to dictionary, all you need is a LocalizationText object.
+ */
 function AddEntryToDictionary(lzObj: LocalizationText) {
 	if (!textIDMap.has(lzObj.textID)) {
 		textIDMap.set(lzObj.textID, new Map());
@@ -168,7 +193,9 @@ function AddEntryToDictionary(lzObj: LocalizationText) {
 	if (langMap) {
 		if (!checkTranslation(lzObj)) return false;
 		if (langMap.has(lzObj.langCode)) {
-			console.warn("Skipping repeated entry in dictionary...");
+			warn(
+				`[${lzObj.langCode}] Skipping repeated entry "${lzObj.textID}" in dictionary...`
+			);
 			return false;
 		}
 		langMap.set(lzObj.langCode, lzObj);
@@ -176,7 +203,8 @@ function AddEntryToDictionary(lzObj: LocalizationText) {
 	return true;
 }
 
-const escapeMessage = (str: string) => str.replaceAll("\n", "\\n").replaceAll("\"","\\\"");
+const escapeMessage = (str: string) =>
+	str.replaceAll("\n", "\\n").replaceAll('"', '\\"');
 
 /**
  * Generates a lua function that has all localizations included of same textID.
@@ -192,23 +220,23 @@ function createLocalizationFn(textID: string, tList: LocalizationText[]) {
 				// const isLast = tList.length === index + 1;
 				return REF_TRANSLATION.replaceAll(
 					"<LOCALIZED_TEXT>",
-					escapeMessage(translation.message),
+					escapeMessage(translation.message)
 				).replaceAll("<LANGUAGE_CODE>", translation.langCode); // + (isLast ? ",\n" : "\n")
 			})
-			.join(",\n"),
+			.join(",\n")
 	);
 }
 
 /**
  * Get all files in the folder and read them to JSON.
- * @param langCode
+ * Notice that this function only accepts langCode as parameter.
  */
 function readLocalizationFolder(langCode: SupportedLangs) {
 	// console.log(`>> Reading messages for "${langCode}" <<`);
 	const absPath = path.join(INPUT_PATH, langCode);
 	const jsonFiles = readdirSync(absPath, {
 		recursive: true,
-		encoding: "utf8",
+		encoding: "utf8"
 	});
 
 	// Supposing this is a JSON file
@@ -217,13 +245,15 @@ function readLocalizationFolder(langCode: SupportedLangs) {
 
 		if (lstatSync(fullJSONFile).isDirectory()) {
 			// This is a directory, we're running in recursive mode.
-			continue
+			continue;
 		}
 		const rec = _parseFileToRecord(fullJSONFile);
 		if (rec === undefined) {
 			console.error(
-				"Unable to read translation file (%s), do you have enough permissions?",
-				fullJSONFile,
+				ac.redBright(
+					"Unable to read translation file (%s), do you have enough permissions?"
+				),
+				fullJSONFile
 			);
 			continue;
 		}
@@ -239,7 +269,7 @@ function readLocalizationFolder(langCode: SupportedLangs) {
 				message,
 				join(
 					dirname(translation_file),
-					basename(translation_file, extname(translation_file)),
+					basename(translation_file, extname(translation_file))
 				)
 			);
 
@@ -248,38 +278,46 @@ function readLocalizationFolder(langCode: SupportedLangs) {
 	}
 	// console.log(`<< Finished messages for "${langCode}" >>\n`);
 }
-
-function assert(cond: boolean, msg: string) {
-	if (cond !== true) throw Error(msg);
-}
-
+/**
+ * Make sure output path is ready to be written.
+ * It will delete everything in output path, be careful.
+ */
 function prepareOutputPath() {
 	// Make sure we aren't deleting system root, right?
 	assert(
 		existsSync("./node_modules"),
-		'Missing node_modules. Did you forgot to run "npm install"?',
+		ac.redBright(
+			'Missing node_modules. Did you forgot to run "npm install"?'
+		)
 	);
 	assert(
 		existsSync("./package.json"),
-		'Missing "package.json". \nAre you really running this script in same directory of repository?\nMake sure you\'ve run "npm install && npm run build".',
+		ac.redBright(
+			'Missing "package.json". \nAre you really running this script in same directory of repository?\nMake sure you\'ve run "npm install && npm run build".'
+		)
 	);
 	assert(
 		existsSync(INPUT_PATH),
-		`Missing INPUT_PATH "${INPUT_PATH}"\nMake sure the path is setup correctly.`,
+		ac.redBright(
+			`Missing INPUT_PATH "${INPUT_PATH}"\nMake sure the path is setup correctly.`
+		)
 	);
 	rmSync(OUTPUT_PATH, { recursive: true, force: true }); // This... is dangerous...
 	mkdirSync(OUTPUT_PATH);
 }
 
-type FileContentMap = Map<string, string>
+// I had to put this to make code cleaner.
+type FileContentMap = Map<string, string>;
 function parseAllTranslations(): FileContentMap {
 	const strBuffers = new Map<string, string>();
 	textIDMap.forEach((vLangMap, kTextID) => {
-		
-		let file = vLangMap.get(DEFAULT_LANGUAGE)?.file || ODDS_FILE; 
-		let fnString: string
+		let file = vLangMap.get(DEFAULT_LANGUAGE)?.file || ODDS_FILE;
+		let fnString: string;
 		if (BUNDLE_ALL) {
 			file = "bundle";
+		}
+		if (file.length === 0) {
+			return; // It's an odd file, but we can't do anything about it. (same as continue)
 		}
 		if (MULTIFOLDER_MODE) {
 			vLangMap.forEach((lzObj, curLang) => {
@@ -287,11 +325,11 @@ function parseAllTranslations(): FileContentMap {
 				fnString = createLocalizationFn(kTextID, [lzObj]);
 				strBuffers.set(
 					mfile,
-					(strBuffers.has(mfile) ? strBuffers.get(mfile) : "") + fnString,
+					(strBuffers.has(mfile) ? strBuffers.get(mfile) : "") +
+						fnString
 				);
-			})
+			});
 		} else {
-	
 			const allLzObjs = vLangMap.values().toArray(); // This disregards the Key record.
 			/**
 			 * It will be false if ODDS_FILE is empty.
@@ -300,17 +338,23 @@ function parseAllTranslations(): FileContentMap {
 
 			strBuffers.set(
 				file,
-				(strBuffers.has(file) ? strBuffers.get(file) : "") + fnString,
+				(strBuffers.has(file) ? strBuffers.get(file) : "") + fnString
 			);
 		}
-
 	});
-	if (strBuffers.has(ODDS_FILE)) {
-		strBuffers.set(ODDS_FILE, "-- Any warnings from converting translations will be there --\n\n" + strBuffers.get(ODDS_FILE))
+	if (ODDS_FILE && strBuffers.has(ODDS_FILE)) {
+		strBuffers.set(
+			ODDS_FILE,
+			"-- Any warnings from converting translations will be there --\n\n" +
+				strBuffers.get(ODDS_FILE)
+		);
 	}
 	return strBuffers;
 }
 
+/**
+ * Generate all output files.
+ */
 async function writeAllToOutput(strBuffers: FileContentMap) {
 	let errors = 0;
 
@@ -319,42 +363,57 @@ async function writeAllToOutput(strBuffers: FileContentMap) {
 		const filePath = join(OUTPUT_PATH, `${kFilename}.lua`);
 		const dirTree = dirname(filePath);
 		if (!existsSync(dirTree)) {
-			mkdirSync(dirTree, {recursive: true})
+			mkdirSync(dirTree, { recursive: true });
 		}
-		prms.push(writeFile(filePath, vLuaCode, { encoding: "utf-8" }).catch(
-			(reason) => {
-				if (typeof reason === "string") {
-					console.error(reason);
+		prms.push(
+			writeFile(filePath, vLuaCode, { encoding: "utf-8" }).catch(
+				(reason) => {
+					if (typeof reason === "string") {
+						console.error(ac.redBright(reason));
+					}
+					errors += 1;
 				}
-				errors += 1;
-			}
-		))
+			)
+		);
 	});
 
-	await Promise.all(prms)
-	return errors
+	await Promise.all(prms);
+	return errors;
 }
 
+// ------------------ Runtime code ------------------ //
 
-// Runtime code //
-
+console.log(ac.greenBright(`Starting localization conversion...`));
+BUNDLE_ALL && console.log("[+] Single file mode.");
+MULTIFOLDER_MODE && console.log("[+] Separate folder per language (slower)");
+CHECK_MESSAGE &&
+	console.log("Messages will be checked for empty or non-translated texts.");
 prepareOutputPath();
 
 const langs = readdirSync(INPUT_PATH);
 for (const language of langs) {
 	if (!lstatSync(join(INPUT_PATH, language)).isDirectory()) {
-		console.error("Odd file in input path, expecting directory with message files got file in root.")
-		continue
-	} 
+		console.error(
+			"Odd file in input path, expecting directory with message files got file in root."
+		);
+		continue;
+	}
 	if (!isSupportedLanguage(language)) {
-		console.error(`Expected one of supported languages in GMod but got ${language}, are you sure you named the folder correctly?\n` + 
-			"Please, refer to: https://wiki.facepunch.com/gmod/Addon_Localization#supportedlanguages")
-		continue
-	} 
-	readLocalizationFolder(language)
+		console.error(
+			ac.redBright(
+				`Expected one of supported languages in GMod but got ${language}, are you sure you named the folder correctly?\n`
+			) +
+				"Please, refer to: https://wiki.facepunch.com/gmod/Addon_Localization#supportedlanguages"
+		);
+		continue;
+	}
+	readLocalizationFolder(language);
 }
-
-const files = parseAllTranslations();
-writeAllToOutput(files);
-
-console.log("Done!")
+const errors = await writeAllToOutput(parseAllTranslations());
+if (errors > 0) {
+	console.error(
+		ac.yellow(`Finished with ${errors} errors, check output folder.`)
+	);
+} else {
+	console.log("Done!");
+}
