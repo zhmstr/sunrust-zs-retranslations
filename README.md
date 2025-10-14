@@ -28,3 +28,4 @@ Optionally, you can compile the files to Lua. This step is not required.
 ## Notes
 
 - Don't worry about comments in JSON, it will be ignored
+- This version is a modified version of [Crack's ZS Translations](https://github.com/Crack031/sunrust-zs-translations/)
